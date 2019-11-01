@@ -7,6 +7,10 @@ import Focus from '../components/focus/focus.vue'
 import Mine from '../components/mine/mine.vue'
 import serch1 from '../components/classify/compontents/serch1.vue'
 
+import One from "../components/focus/components/one.vue"
+import Two from "../components/focus/components/two.vue"
+import Three from "../components/focus/components/three.vue"
+import Four from "../components/focus/components/four.vue"
 
 Vue.use(VueRouter);
 
@@ -26,6 +30,7 @@ let routes = [
     {
         path:'/serch1',
         component:serch1,
+        component: Classify
     },
     {
         path: '/circle',
@@ -33,7 +38,26 @@ let routes = [
     },
     {
         path: '/focus',
-        component: Focus
+        component: Focus,
+        resirect:"/focus/one",
+        children:[
+            {
+                path:"one",
+                component:One
+            },
+            {
+                path:"two",
+                component:Two
+            },
+            {
+                path:"three",
+                component:Three
+            },
+            {
+                path:"four",
+                component:Four
+            }
+        ]
     },
     {
         path: '/mine',
@@ -43,6 +67,7 @@ let routes = [
         path: '*',
         resirect:'/home'
     },
+   
 ]
 
 let router = new VueRouter({

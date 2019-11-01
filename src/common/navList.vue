@@ -34,7 +34,11 @@
   width: 100%;
   display: flex;
   padding: 0;
+<<<<<<< HEAD
     height: 98px
+=======
+  
+>>>>>>> asf
 }
 .nav li {
   display: flex;
@@ -42,15 +46,24 @@
   justify-content: center;
   align-items: center;
   flex: 1;
+<<<<<<< HEAD
       /* width: 75px;
     height: 49px; */
 }
 .nav li i {
   font-size: 50px;
+=======
+}
+.nav li i {
+  font-size: 22px;
+>>>>>>> asf
 }
 .router-link-active {
   color: red;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> asf
 </style>

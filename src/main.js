@@ -7,6 +7,11 @@ import './common/css/fonts.css'
 import "./common/css/reset.css"
 import store from './store'
 
+import axios from 'axios'
+import "./common/css/reset.css"
+
+import 'lib-flexible'
+Vue.prototype.$http = axios
 Vue.config.productionTip = false
 Vue.use(VueLazyload, {
   preLoad: 1.3,
@@ -18,6 +23,7 @@ Vue.use(VueLazyload, {
 
 new Vue({
   store,
+
   render: h => h(App),
   router
 }).$mount('#app')

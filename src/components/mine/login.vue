@@ -82,7 +82,7 @@ export default {
       width: 290px;
       height: 40px;
       display: inline-block;
-      float: left;
+      // float: left;
       outline: none;
     }
   }
@@ -98,18 +98,18 @@ export default {
       width: 290px;
       height: 40px;
       display: inline-block;
-      float: left;
+      // float: left;
       outline: none;
     }
   }
   .left {
     display: inline-block;
-    float: left;
+    // float: left;
     margin-left: 40px;
   }
   .right {
     display: inline-block;
-    float: right;
+    // float: right;
     margin-right: 40px;
   }
   button {

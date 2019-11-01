@@ -69,6 +69,12 @@ export default {
     // like,
     // navList,
     // gotop,
+  },
+  created(){
+    window.onscroll=()=>{
+      var h=document.documentElement.scrollTop;
+          window.console.log(h,".....")
+    }
   }
 };
 </script>

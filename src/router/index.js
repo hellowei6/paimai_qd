@@ -9,6 +9,12 @@ import One from '../components/home/components/one.vue'
 import Two from '../components/home/components/two.vue'
 import Three from '../components/home/components/three.vue'
 import Four from '../components/home/components/four.vue'
+import serch1 from '../components/classify/compontents/serch1.vue'
+
+import One from "../components/focus/components/one.vue"
+import Two from "../components/focus/components/two.vue"
+import Three from "../components/focus/components/three.vue"
+import Four from "../components/focus/components/four.vue"
 
 Vue.use(VueRouter);
 
@@ -21,6 +27,25 @@ let routes = [
         path: '/home',
         component: Home,
         resiret:'/home/one',
+        component: Home
+    },
+    {
+        path: '/classify',
+        component: Classify,
+    },
+    {
+        path:'/serch1',
+        component:serch1,
+        component: Classify
+    },
+    {
+        path: '/circle',
+        component: Circle
+    },
+    {
+        path: '/focus',
+        component: Focus,
+        resirect:"/focus/one",
         children:[
             {
                 path:"one",
@@ -60,6 +85,7 @@ let routes = [
         path: '*',
         resirect:'/home'
     },
+   
 ]
 
 let router = new VueRouter({

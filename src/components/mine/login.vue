@@ -42,12 +42,10 @@ export default {
   },
   methods: {
     login() {
-      axios
-        .get(
+      axios.get(
           `http://localhost:8000?username=${this.userName}&pwd=${this.password}`
-        )
-        .then(data => {
-          window.console.log(data.data.code);
+        ).then(data=> {
+          window.console.log(data);
           this.codeList = data.data.code;
           if (this.codeList == "200") {
             this.$router.push("/loginok");

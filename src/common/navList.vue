@@ -12,7 +12,7 @@
       <i class="iconfont icon-quanquandongtai"></i>
       兴趣圈
     </router-link>
-    <router-link tag="li" to="/focus">
+    <router-link tag="li" to="/focus/one">
       <i class="iconfont icon-naozhong"></i>
       关注
     </router-link>

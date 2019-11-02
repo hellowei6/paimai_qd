@@ -1,4 +1,10 @@
 import axios from "axios"
+
+
+axios.defaults.baseURL = "http://127.0.0.1:3000/ali/"
+export function getBanner() {
+    return  axios.get("public")
+}
 axios.defaults.baseURL="http://127.0.0.1:3000/ali/"
 
 //对数据进行拦截
@@ -116,10 +122,20 @@ axios.interceptors.response.use(function (response) {
     // Do something with response data
     return response.data;
 }, function (error) {
-// Any status codes that falls outside the range of 2xx cause this function to trigger
-// Do something with response error
+    // Any status codes that falls outside the range of 2xx cause this function to trigger
+    // Do something with response error
     return Promise.reject(error);
 });
+
+export function getMsProduct1(){
+    return axios.get('msProduct1')
+}
+
+export function getRotation(){
+    return axios.get('rotation')
+}
+
+
 
 //关注提醒
 export function getALLfocus() {

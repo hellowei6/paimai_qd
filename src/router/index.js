@@ -15,6 +15,10 @@ import Two from '../components/home/components/two.vue'
 import Three from '../components/home/components/three.vue'
 import Four from '../components/home/components/four.vue'
 
+
+import Searchall from '../components/home/components/searchall.vue'
+
+
 import Searchall from '../components/home/components/searchall.vue'
 
 import serch1 from '../components/classify/compontents/serch1.vue'

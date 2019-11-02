@@ -14,14 +14,11 @@ import One from '../components/home/components/one.vue'
 import Two from '../components/home/components/two.vue'
 import Three from '../components/home/components/three.vue'
 import Four from '../components/home/components/four.vue'
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
 import Searchall from '../components/home/components/searchall.vue'
-=======
->>>>>>> 7926e3bf5c95c371490c48550267a224d19a6db5
+
 import serch1 from '../components/classify/compontents/serch1.vue'
->>>>>>> 87e8c354d23984565a09b1c3f51de4528d3b4c9e
+
 
 import serch1 from '../components/classify/compontents/serch1.vue'
 import One1 from "../components/focus/components/one.vue"

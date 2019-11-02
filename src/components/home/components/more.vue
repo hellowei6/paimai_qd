@@ -9,10 +9,10 @@ export default {};
 </script>
 <style lang="less" scoped>
 .more {
-  width: 44px;
-  height: 34px;
+  width: 88px;
+  height: 68px;
   padding: 0 1%;
-  font-size: 13px;
+  font-size: 26px;
   color: rgb(154, 154, 154);
   position: relative;
 

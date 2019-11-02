@@ -1,6 +1,6 @@
 <template>
   <ul class="nav">
-    <router-link tag="li" to="/home">
+    <router-link tag="li" to="/home/one">
       首页
     </router-link>
     <router-link tag="li" to="/classify">
@@ -26,7 +26,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width:100%;
   display: flex;
   padding: 0
 }

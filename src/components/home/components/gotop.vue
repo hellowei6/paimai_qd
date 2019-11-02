@@ -12,8 +12,8 @@ export default {
 </script>
 <style lang="less" scoped>
 div{
-    width:44px;
-    height:44px;
+    width:100px;
+    height:100px;
     border-radius:100%;
     img{
         width:100%;

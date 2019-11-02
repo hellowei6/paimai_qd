@@ -9,6 +9,7 @@ import One from '../components/home/components/one.vue'
 import Two from '../components/home/components/two.vue'
 import Three from '../components/home/components/three.vue'
 import Four from '../components/home/components/four.vue'
+import Searchall from '../components/home/components/searchall.vue'
 
 Vue.use(VueRouter);
 
@@ -24,7 +25,8 @@ let routes = [
         children:[
             {
                 path:"one",
-                component:One
+                component:One,
+                
             },
             {
                 path:"two",
@@ -39,6 +41,10 @@ let routes = [
                 component:Four
             },
         ]
+    },
+    {
+        path: '/searchall',
+        component: Searchall
     },
     {
         path: '/classify',

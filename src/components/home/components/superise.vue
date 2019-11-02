@@ -52,22 +52,22 @@ export default {
 .superiseall {
   width: 96%;
   margin:auto;
-  height: 230px;
-  margin-top: 15px;
+  height: 460px;
+  margin-top: 30px;
   position: relative;
   .findleft {
     height: 15%;
     .title1 {
       color: rgb(47, 46, 47);
-      line-height: 18px;
+      line-height: 36px;
       font-weight: bold;
       margin-right: 3%;
-      font-size: 18px;
+      font-size: 36px;
     }
     .title2 {
-      font-size: 16px;
+      font-size: 32px;
       color: rgb(136, 136, 136);
-      line-height: 16px;
+      line-height: 32px;
     }
   }
 
@@ -99,15 +99,15 @@ export default {
         margin-top: 15%;
         margin-left: 5%;
         .span3 {
-          font-size: 14px;
+          font-size: 28px;
           font-weight: bold;
           color: rgb(51, 51, 51);
-          line-height: 16px;
+          line-height: 32px;
         }
         .span4 {
-          font-size: 11px;
+          font-size: 22px;
           color: rgb(153, 153, 153);
-          line-height: 14px;
+          line-height: 28px;
         }
       }
       .right {

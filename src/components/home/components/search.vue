@@ -1,10 +1,10 @@
 <template>
 <!-- 搜索框 -->
   <div>
-    <a href="#">
+    <router-link to="/searchall">
       <img src="../images/top3.png" />
       <span>手表一元起拍</span>
-    </a>
+</router-link>
   </div>
 </template>
 
@@ -16,28 +16,28 @@ export default {};
 <style lang="less" scoped>
 div {
   width: 54%;
-  height: 32px;
+  height: 64px;
   border: 0px solid black;
   box-sizing: border-box;
-  border-radius: 38.5px;
-  top: 6px;
-  right: 9px;
+  border-radius: 77px;
+  top: 12px;
+  right: 18px;
   background-color: rgb(239, 239, 239);
   align-items: center;
-  padding: 6px 0 ;
+  padding: 12px 0 ;
   img {
     
-    width: 14px;
-    height: 16px;
-    margin-left: 8px;
-    margin-right: 3px;
+    width: 28px;
+    height: 32px;
+    margin-left: 16px;
+    margin-right: 6px;
     float: left;
   }
   span {
     width: 80%;
     display: block;
-    height: 16px;
-    font-size: 13px;
+    height: 32px;
+    font-size: 26px;
     color: rgb(153, 153, 153);
     float: left;
   }

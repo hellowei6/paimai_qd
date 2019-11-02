@@ -16,15 +16,15 @@ import Three from '../components/home/components/three.vue'
 import Four from '../components/home/components/four.vue'
 
 
+
 import Searchall from '../components/home/components/searchall.vue'
 
 
-import Searchall from '../components/home/components/searchall.vue'
+
 
 import serch1 from '../components/classify/compontents/serch1.vue'
 
 
-import serch1 from '../components/classify/compontents/serch1.vue'
 import One1 from "../components/focus/components/one.vue"
 import Two1 from "../components/focus/components/two.vue"
 import Three1 from "../components/focus/components/three.vue"
@@ -39,7 +39,6 @@ let routes = [
     },
     {
         path: '/home',
-        // component: Home,
         component: Home,
         resirect:"/home/one",
         children:[
@@ -130,7 +129,6 @@ let routes = [
     {
         path: '/content',
         component: Mine,
-        // component: Focus,
        
     },
     {

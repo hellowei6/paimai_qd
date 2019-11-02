@@ -11,12 +11,12 @@ import One from '../components/home/components/one.vue'
 import Two from '../components/home/components/two.vue'
 import Three from '../components/home/components/three.vue'
 import Four from '../components/home/components/four.vue'
-import serch1 from '../components/classify/compontents/serch1.vue'
 
-import One from "../components/focus/components/one.vue"
-import Two from "../components/focus/components/two.vue"
-import Three from "../components/focus/components/three.vue"
-import Four from "../components/focus/components/four.vue"
+import serch1 from '../components/classify/compontents/serch1.vue'
+import One1 from "../components/focus/components/one.vue"
+import Two1 from "../components/focus/components/two.vue"
+import Three1 from "../components/focus/components/three.vue"
+import Four1 from "../components/focus/components/four.vue"
 
 Vue.use(VueRouter);
 

@@ -13,22 +13,21 @@ import Three from '../components/home/components/three.vue'
 import Four from '../components/home/components/four.vue'
 import serch1 from '../components/classify/compontents/serch1.vue'
 
-import One from "../components/focus/components/one.vue"
-import Two from "../components/focus/components/two.vue"
-import Three from "../components/focus/components/three.vue"
-import Four from "../components/focus/components/four.vue"
+// import One from "../components/focus/components/one.vue"
+// import Two from "../components/focus/components/two.vue"
+// import Three from "../components/focus/components/three.vue"
+// import Four from "../components/focus/components/four.vue"
 
 Vue.use(VueRouter);
 
-let routes = [
-    {
+let routes = [{
         path: '/',
-        resirect:'/home'
+        resirect: '/home'
     },
     {
         path: '/home',
-        component: Home,
-        resiret:'/home/one',
+        // component: Home,
+        resiret: '/home/one',
         component: Home
     },
     {
@@ -36,9 +35,48 @@ let routes = [
         component: Classify,
     },
     {
-        path:'/serch1',
-        component:serch1,
+        path: '/serch1',
+        component: serch1,
+        // component: Classify
+    },
+    {
+        path: '/resigter',
+        component: resigter
+    },
+    {
+        path: '/login',
+        component: login
+    },
+    {
+        path: '/content',
+        // component: Mine,
+        component: Focus,
+        resirect: "/focus/one",
+        children: [{
+                path: "one",
+                component: One
+            },
+            {
+                path: "two",
+                component: Two
+            },
+            {
+                path: "three",
+                component: Three
+            },
+            {
+                path: "four",
+                component: Four
+            },
+        ]
+    },
+    {
+        path: '/classify',
         component: Classify
+    },
+    {
+          path:'/loginok',
+          component:Mine
     },
     {
         path: '/circle',
@@ -53,58 +91,10 @@ let routes = [
         component: login
     },
     {
-        path: '/resigter',
-        component: resigter
-    },
-    {
-        path: '/login',
-        component:login
-    },
-    {
-        path: '/content',
-        component:Mine,
-        component: Focus,
-        resirect:"/focus/one",
-        children:[
-            {
-                path:"one",
-                component:One
-            },
-            {
-                path:"two",
-                component:Two
-            },
-            {
-                path:"three",
-                component:Three
-            },
-            {
-                path:"four",
-                component:Four
-            },
-        ]
-    },
-    {
-        path: '/classify',
-        component: Classify
-    },
-    {
-        path: '/circle',
-        component: Circle
-    },
-    {
-        path: '/focus',
-        component: Focus
-    },
-    {
-        path: '/mine',
-        component: Mine
-    },
-    {
         path: '*',
-        resirect:'/home'
+        resirect: '/home'
     },
-   
+
 ]
 
 let router = new VueRouter({

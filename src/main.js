@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import './common/css/reset.css'
+// import './common/css/reset.css'
 import VueLazyload from 'vue-lazyload'
 import 'lib-flexible'
 
-import VueLazyload from 'vue-lazyload'
-import 'lib-flexible'
+// import VueLazyload from 'vue-lazyload'
+// import 'lib-flexible'
 import './common/css/fonts.css'
 import "./common/css/reset.css"
 import store from './store'

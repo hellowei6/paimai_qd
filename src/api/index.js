@@ -5,6 +5,7 @@ axios.interceptors.response.use(function(response){
 },function(error){
     return Promise.reject(error)
 })
+
 axios.defaults.baseURL = "http://127.0.0.1:3000/ali/"
 export function getBanner() {
     return  axios.get("public")

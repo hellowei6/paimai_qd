@@ -1,12 +1,19 @@
 import axios from "axios"
-axios.defaults.baseURL="http://127.0.0.1:3000/ali/"
 
-//对数据进行拦截
 axios.interceptors.response.use(function(response){
     return response.data;
 },function(error){
     return Promise.reject(error)
 })
+
+axios.defaults.baseURL = "http://127.0.0.1:3000/ali/"
+export function getBanner() {
+    return  axios.get("public")
+}
+
+
+//对数据进行拦截
+
 //获取双11
 export function getShuang(){
     return axios.get("shuang")
@@ -69,4 +76,29 @@ export function getThreeList(){
 //所有商品4
 export function getFourList(){
     return axios.get("fourList")
+}
+
+// 获取所有的分类
+export function getCateList(){
+    return axios.get("allCateList")
+}
+
+
+export function getShoppingList(){
+    return axios.get("shoppingList")
+}
+// 1.获取banner图
+export function getMsProduct1(){
+    return axios.get('msProduct1')
+}
+
+export function getRotation(){
+    return axios.get('rotation')
+}
+
+
+
+//关注提醒
+export function getALLfocus() {
+    return axios.get("focusShopping")
 }

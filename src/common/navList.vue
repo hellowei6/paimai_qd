@@ -1,18 +1,23 @@
 <template>
   <ul class="nav">
     <router-link tag="li" to="/home/one">
+    <i class="iconfont icon-shouyexiantiao"></i>
       首页
     </router-link>
     <router-link tag="li" to="/classify">
+      <i class="iconfont icon-yalashefenleixiantiao"></i>
       分类
     </router-link>
     <router-link tag="li" to="/circle">
+      <i class="iconfont icon-quanquandongtai"></i>
       兴趣圈
     </router-link>
-    <router-link tag="li" to="/focus">
+    <router-link tag="li" to="/focus/one">
+      <i class="iconfont icon-naozhong"></i>
       关注
     </router-link>
     <router-link tag="li" to="/mine">
+      <i class="iconfont icon-wode-copy"></i>
       我的
     </router-link>
   </ul>
@@ -38,9 +43,12 @@
   flex: 1;
 }
 .nav li i {
-  font-size: 22px;
+  font-size: 50px;
+
 }
+
 .router-link-active {
   color: red;
 }
+
 </style>

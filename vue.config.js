@@ -1,24 +1,14 @@
-module.exports={
-    css:{
-        loaderOptions:{
+module.exports = {
+    css: {
+        loaderOptions: {
             postcss:{
-                plugins:[
+                //这是rem适配的配置
+                plugins: [
                     require("postcss-px2rem")({
-                        remUnit:75
-                    })
+                        remUni: 75
+                    })                   
                 ]
             }
         }
-    },
-    // devServer:{
-    //     proxy:{
-    //         '/ali':{
-    //             target:"http://127.0.0.1:3000",            //代理接口
-    //             changeOrigin:true,
-    //             // pathRewrite:{
-    //             //     '^/dang':''              //代理的路径
-    //             // }
-    //         }
-    //     }
-    // }
+    }
 }

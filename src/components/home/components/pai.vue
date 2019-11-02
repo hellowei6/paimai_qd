@@ -156,30 +156,30 @@ export default {
   // height: 380px;
   box-sizing: border-box;
   background: white;
-  padding: 10px 0 0 0;
-  border-radius: 6px;
+  border-radius: 12px;
   margin: auto;
-  margin-top:10px;
+  margin-top:20px;
 
   .searchtop {
     width: 96%;
     margin:auto;
-    height: 36px;
+    height: 72px;
+    padding:20px 0;
     position: relative;
     .searchright {
       position: absolute;
-      top: -5px;
+      top: 10px;
       right: -5%;
     }
   }
   // 商品滚动
   .product {
     width: 100%;
-    height: 200px;
+    height: 400px;
     background: white;
     overflow-x: auto;
     overflow-y: hidden;
-    border-top: 1px solid rgb(233, 234, 236);
+    border-top: 2px solid rgb(233, 234, 236);
 
     ul {
       // width: 470px;
@@ -189,10 +189,10 @@ export default {
 
       li {
         list-style: none;
-        width: 74px;
-        height: 70px;
-        padding: 7px 0;
-        margin: 0 3px 0 0;
+        width: 148px;
+        height: 140px;
+        padding: 14px 0;
+        margin: 0 6px 0 0;
         position: relative;
         float: left;
 
@@ -202,32 +202,32 @@ export default {
           width: 100%;
           height: 100%;
           img {
-            width: 56px;
-            height: 56px;
-            margin-left: 9px;
+            width: 112px;
+            height: 112px;
+            margin-left: 18px;
             display: inline-block;
-            margin-right: 10px;
+            margin-right: 20px;
           }
 
           span {
             width: 100%;
-            height: 14px;
+            height: 28px;
             text-align: center;
-            font-size: 14px;
+            font-size: 28px;
             color: rgb(51, 51, 51);
-            line-height: 14px;
+            line-height: 28px;
             display: block;
             margin-block-end: 0;
           }
           .little {
-            width: 36px;
-            height: 20px;
+            width: 72px;
+            height: 40px;
             position: absolute;
             right: 0;
-            top: 3px;
+            top: 6px;
             img {
-              width: 36px;
-              height: 20px;
+              width: 72px;
+              height: 40px;
               margin: auto;
             }
           }
@@ -274,9 +274,9 @@ export default {
     width: 100%;
     height: 20%;
     margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top: 1px solid rgb(233, 234, 236);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid rgb(233, 234, 236);
     img {
       width: 100%;
       height: 100%;
@@ -287,14 +287,14 @@ export default {
   .low {
     width: 96%;
     margin: auto;
-    height: 135px;
+    height: 270px;
     text-decoration: none;
-    padding-top: 10px ;
-    border-top: 1px dashed rgb(233, 234, 236);
+    padding-top: 20px ;
+    border-top: 2px dashed rgb(233, 234, 236);
     .lowleft,
     .lowright {
       width: 49.5%;
-      height: 122px;
+      height: 244px;
       float: left;
       background: white;
       
@@ -308,24 +308,24 @@ export default {
           text-decoration: none;
 
           span {
-            font-size: 14px;
+            font-size: 28px;
             font-weight: bold;
             color: rgb(61, 66, 69);
-            line-height: 15px;
-            height: 15px;
+            line-height: 30px;
+            height: 30px;
           }
           .box2 {
-            border-radius: 6px;
+            border-radius: 126px;
             width: 90%;
             height: 90%;
             padding-top:5%;
             background-color: rgba(215, 35, 68, 0.04);
 
             p {
-              line-height: 14px;
+              line-height: 28px;
               font-weight: 500;
-              font-size: 13px;
-              height: 14px;
+              font-size: 26px;
+              height: 28px;
               padding-bottom:9%;
             }
             img {

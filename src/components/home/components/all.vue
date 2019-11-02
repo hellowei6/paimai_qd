@@ -22,7 +22,7 @@ export default {
 .all{
     width:96%;
     margin:auto;
-    padding-top:10px;
+    padding-top:20px;
     .like{
         width:100%;
     }

@@ -79,11 +79,11 @@ export default {
     }
     li {
       width: 48%;
-      height: 260px;
+      height: 520px;
       float: left;
-      border-radius: 10px;
+      border-radius: 20px;
       margin-right: 4%;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       overflow: hidden;
       position: relative;
       .big {
@@ -118,7 +118,7 @@ export default {
         }
         .zhuan {
           width: 94%;
-          height: 17px;
+          height: 34px;
           border-radius: 5%;
           background-color: rgb(255, 239, 239);
           position: absolute;
@@ -126,26 +126,26 @@ export default {
           left: 3%;
           z-index: 20;
           .zhuan1 {
-            height: 17px;
+            height: 34px;
             width: 33%;
-            border-radius: 8px;
+            border-radius: 16px;
             background-image: linear-gradient(
               to right,
               rgb(255, 78, 114),
               rgb(228, 23, 48)
             );
             color: #fff;
-            font-size: 11px;
+            font-size: 22px;
             font-weight: bold;
             text-align: center;
-            line-height: 17px;
+            line-height: 34px;
             float: left;
           }
           span {
-            font-size: 10px;
-            margin-left: 5px;
-            height: 15px;
-            line-height: 15px;
+            font-size: 20px;
+            margin-left: 10px;
+            height:30px;
+            line-height: 30px;
             color: rgb(239, 80, 80);
             float: left;
           }
@@ -154,13 +154,13 @@ export default {
           width: 100%;
           height: 35%;
           background: white;
-          padding: 10px 0;
+          padding: 20px 0;
           position: relative;
           .txt1 {
-            font-size: 14px;
-            width: 156px;
-            height: 37px;
-            line-height: 18.5px;
+            font-size: 28px;
+            width: 312px;
+            height: 74px;
+            line-height: 37px;
             color: rgb(61, 66, 69);
             text-overflow: ellipsis;
             overflow: hidden;
@@ -176,11 +176,11 @@ export default {
           }
           .content {
             position: relative;
-            height: 14px;
-            line-height: 14px;
+            height: 28px;
+            line-height: 28px;
             align-items: center;
-            margin-top: 10px;
-            margin-left: 20px;
+            margin-top: 20px;
+            margin-left: 40px;
             position: relative;
             span {
               display: block;
@@ -188,37 +188,37 @@ export default {
               flex-direction: column;
               align-content: flex-start;
               flex-shrink: 0;
-              font-size: 11px;
-              margin-right: 6px;
+              font-size: 22px;
+              margin-right: 12px;
               color: rgb(194, 31, 58);
               float: left;
             }
             .tiao {
               position: absolute;
 
-              right: 10px;
-              width: 45px;
-              height: 15px;
+              right: 20px;
+              width: 90px;
+              height: 30px;
               background-color: rgb(255, 239, 242);
-              border-radius: 7.5px;
+              border-radius: 15px;
               span {
-                font-size: 10px;
+                font-size: 20px;
                 color: rgb(239, 80, 102);
               }
             }
 
             .chu {
-              width: 100px;
-              height: 59px;
+              width: 200px;
+              height: 118px;
               position: absolute;
               top: 0;
 
               span {
-                font-size: 10px;
+                font-size: 20px;
                 color: rgb(174, 174, 174);
-                height: 15px;
-                line-height: 15px;
-                border-radius: 7.5px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 15px;
                 background-color: rgb(243, 243, 243);
                 padding-left: 10px;
                 padding-right: 10px;
@@ -230,10 +230,10 @@ export default {
         .bottom2 {
           width: 100%;
           height: 35%;
-          padding: 20px 0;
+          padding: 40px 0;
           position: absolute;
           left: 0;
-          bottom: -20px;
+          bottom: -40px;
           z-index: 40;
 
           img {
@@ -243,37 +243,37 @@ export default {
           }
           .ceng {
               position: absolute;
-              top:10px;
+              top:20px;
               left:0;
-              margin-top:10px;
-              margin-left:10px;
+              margin-top:20px;
+              margin-left:20px;
             .ceng1 {
-              font-size: 16px;
-              margin-top: 12px;
-              line-height: 16px;
+              font-size: 32px;
+              margin-top: 24px;
+              line-height: 32px;
               color: rgb(245, 51, 52);
               
             }
             .ceng2 {
-              font-size: 12px;
-              margin-top: 5px;
-              line-height: 11px;
+              font-size: 24px;
+              margin-top: 10px;
+              line-height: 22px;
               color: rgb(102, 102, 102);
             }
             .can {
-              margin-top: 11px;
-              border-radius: 10px;
-              width: 60px;
-              height: 16px;
+              margin-top: 22px;
+              border-radius: 20px;
+              width: 120px;
+              height: 32px;
               background-image: linear-gradient(
                 to right,
                 rgb(245, 51, 52),
                 rgb(255, 90, 91)
               );
               span {
-                width: 60px;
-                height: 16px;
-                font-size: 12px;
+                width: 120px;
+                height: 32px;
+                font-size: 24px;
                 color: rgb(255, 255, 255);
               }
             }

@@ -21,48 +21,49 @@ export default {};
 <style lang="less" scoped>
 .tel {
   width: 100%;
-  height: 16px;
+  height: 32px;
   display: flex;
   flex-direction: row;
-  padding-left: 18px;
-  margin-bottom: 9px;
+
+  margin-bottom: 18px;
   z-index:10;
-  padding-top:50px;
+  margin-top:88px;
   overflow: hidden;
+  background:rgb(183, 9, 19);
 
   .telleft {
     display: flex;
-    height: 12px;
-    padding-right: 9px;
+    height: 24px;
+    margin: 0 18px;
     align-items: center;
     img {
       display: flex;
-      width: 12px;
-      height: 12px;
-      margin-right: 4px;
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
     }
     span {
       color: white;
-      font-size: 12px;
+      font-size: 24px;
     }
   }
   .telright {
 
-    height: 12px;
+    height: 24px;
     align-items: center;
 
     img {
-      width: 12px;
-      height: 12px;
+      width: 24px;
+      height: 24px;
       float: left;
     }
     a{
       text-decoration: none;
       span {
-      line-height: 12px;
-      font-size: 12px;
+      line-height: 24px;
+      font-size: 24px;
       color: white;
-      margin-left: 7px;
+      margin-left: 14px;
       float: left;
     }
     }

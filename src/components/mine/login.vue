@@ -27,11 +27,11 @@
       <span class="right">免费注册</span>
     </router-link>
     <br />
-    <button @click="login">登录</button>
+    <router-link to='loginok'><button @click="login">登录</button></router-link>
   </div>
 </template>
 <script>
-import axios from "axios";
+// import axios from "axios";
 export default {
   data() {
     return {
@@ -42,16 +42,42 @@ export default {
   },
   methods: {
     login() {
-      axios.get(
-          `http://localhost:8000?username=${this.userName}&pwd=${this.password}`
-        ).then(data=> {
-          window.console.log(data);
-          this.codeList = data.data.code;
-          if (this.codeList == "200") {
-            this.$router.push("/loginok");
-          }
-        });
-    }
+      // axios.get(
+      //     `http://localhost:8000?username=${this.userName}&pwd=${this.password}`
+      //   ).then(data=> {
+      //     window.console.log(data);
+      //     this.codeList = data.data.code;
+      //     if (this.codeList == "200") {
+      //       this.$router.push("/loginok");
+      //     }
+      //   });
+
+
+
+    //   var xhr = new XMLHttpRequest();
+    //   //2.打开链接
+    //   xhr.open(
+    //     "GET",
+    //     `http://localhost:8000?username=${this.userName}&pwd=${this.password}`
+    //   );
+    //   //3.发送请求
+    //   xhr.send();
+    //   //接受服务器响应
+    //   //当readystate的值发生改变时，会触发该事件
+    //   xhr.onreadystatechange = function() {
+    //     // console.log(this.readyState);
+    //     //服务器响应完毕
+    //     if (this.readyState == 4 && this.status == 200) {
+    //       window.console.log(JSON.parse(this.response).code);
+    //       this.codeList = JSON.parse(this.response).code;
+    //       window.console.log(this.codeList);
+    //     }
+    //   };
+    //   window.console.log('1'+this.codeList);
+    //   if(this.codeList=="200"){
+    //         this.$router.push("/loginok");
+    //   }
+    },
   }
 };
 </script>

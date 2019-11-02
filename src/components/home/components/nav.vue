@@ -1,5 +1,5 @@
 <template>
-  <div class="all">
+  <div class="all" v-if="hide">
     <div class="navlist">
       <ul ref="myul">
         <li
@@ -32,7 +32,8 @@ export default {
   data() {
     return {
       navList: [],
-      currentIndex: 0
+      currentIndex: 0,
+      hide:false,
     };
   },
   async created() {
@@ -58,15 +59,23 @@ export default {
 
 
 <style lang="less" scoped>
+::-webkit-scrollbar{
+  height:0;
+  width:0
+}
 .all{
 width:100%;
-height:44px;
+height:88px;
 position: relative;
+position: fixed;
+top:90px;
+left: 0;
+z-index: 999;
 
 .navlist {
   width: 100%;
-  height: 32px;
-  padding: 6px 0;
+  height: 64px;
+  padding: 12px 0;
   background: rgb(183, 9, 19);
   overflow-x: auto;
   //   overflow-y: hidden;
@@ -76,34 +85,34 @@ position: relative;
   z-index: 3;
 
   ul {
-    width: 720px;
+    width: 1440px;
     height: 100%;
     .active {
       span {
         opacity: 1;
-        border-bottom: 2px solid #fff;
+        border-bottom: 4px solid #fff;
       }
     }
     li {
       height: 100%;
-      padding: 0 4px;
-      margin: 2px 6px 0;
+      padding: 0 8px;
+      margin: 4px 12px 0;
       float: left;
 
       span {
-        font-size: 14px;
+        font-size: 28px;
         color: rgb(255, 255, 255);
         opacity: 0.7;
         font-weight: 600;
-        padding-bottom: 2px;
-        border-bottom: 2px solid rgb(183, 9, 19);
+        padding-bottom: 4px;
+        border-bottom: 4px solid rgb(183, 9, 19);
       }
     }
   }
 }
 
 .top {
-  width: 38px;
+  width: 76px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -111,10 +120,10 @@ position: relative;
   background: rgb(183, 9, 19);
   z-index: 8;
   img {
-    width: 18px;
-    height: 12px;
-    margin-top: 12px;
-    margin-left: 11px;
+    width: 36px;
+    height: 24px;
+    margin-top: 24px;
+    margin-left: 22px;
   }
 }
 }

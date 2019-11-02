@@ -1,6 +1,10 @@
 <template>
   <ul class="nav">
+<<<<<<< HEAD
+    <router-link tag="li" to="/home/one">
+=======
     <router-link tag="li" to="/home">
+>>>>>>> 7926e3bf5c95c371490c48550267a224d19a6db5
     <i class="iconfont icon-shouyexiantiao"></i>
       首页
     </router-link>
@@ -31,7 +35,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width:100%;
   display: flex;
   padding: 0
 }

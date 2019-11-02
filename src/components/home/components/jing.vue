@@ -52,12 +52,11 @@ export default {
 .choose {
   width: 96%;
   margin:auto;
-  height: 226px;
-  border-radius: 6px;
+  height: 552px;
+  border-radius: 12px;
   box-sizing: border-box;
   background: white;
-  border-radius: 6px;
-  margin-top: 15px;
+  margin-top: 30px;
   position: relative;
 
   .top {
@@ -75,7 +74,7 @@ export default {
     flex: 1;
     span {
       align-content: flex-start;
-      font-size: 15px;
+      font-size: 30px;
       color: rgb(112, 74, 18);
       font-weight: bold;
       z-index: 2;
@@ -84,14 +83,14 @@ export default {
       left: 3%;
     }
     .toptxt {
-      font-size: 13px;
+      font-size: 26px;
       color: rgb(169, 141, 99);
       line-height: 80%;
       position: absolute;
       top: 35%;
       left: 35%;
       padding-left: 2%;
-      border-left: 1px solid rgb(169, 141, 99);
+      border-left: 2px solid rgb(169, 141, 99);
     }
   }
 
@@ -141,13 +140,13 @@ export default {
 
       span {
         width: 100%;
-        height: 28px;
-        line-height: 28px;
+        height: 56px;
+        line-height: 56px;
         color: rgb(51, 51, 51);
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        font-size: 16px;
+        font-size: 32px;
         padding-top: 10%;
       }
       .title {
@@ -155,7 +154,7 @@ export default {
         height: 8%;
         line-height: 8%;
         span {
-          font-size: 13px;
+          font-size: 26px;
           color: rgb(194, 31, 58);
           font-weight: bold;
         }

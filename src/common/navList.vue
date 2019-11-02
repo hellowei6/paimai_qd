@@ -8,11 +8,11 @@
       <i class="iconfont icon-yalashefenleixiantiao"></i>
       分类
     </router-link>
-    <router-link tag="li" to="/circle">
+    <router-link tag="li" to="/circle/whole1">
       <i class="iconfont icon-quanquandongtai"></i>
       兴趣圈
     </router-link>
-    <router-link tag="li" to="/focus">
+    <router-link tag="li" to="/focus/one">
       <i class="iconfont icon-naozhong"></i>
       关注
     </router-link>

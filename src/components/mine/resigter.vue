@@ -53,47 +53,47 @@ export default {
     height:100%;
     .top{
     width:100%;
-    height: 40px;
+    height: 80px;
     // position: relative;
     // line-height:40px;
     
     display: flex;
     button{
-        width: 50px;
-        height: 30px;
+        width: 100px;
+        height: 60px;
         // position: absolute;
         // left: 0;
         
     }
     span{
-        width:100px;
-        font-size: 24px;
+        width:200px;
+        font-size: 48px;
         z-index: 99;
         text-align: center;
         margin: auto;
     }
     .none{
-        width: 50px;
-        height: 30px;
+        width: 100px;
+        height: 60px;
     }
     }
     p{
-        margin-top:10px;
+        margin-top:20px;
         color:#000;
-        margin-bottom:20px;
+        margin-bottom:40px;
     }
     input{
-        height: 40px;
+        height: 80px;
         width:100%;
         outline: 0;
     }
     .solid{
         width: 90%;
         border-bottom: 1px solid gray;
-        margin:20px 0;
+        margin:40px 0;
     }
     .bottom{
-        margin-top: 20px;
+        margin-top: 40px;
         text-align: center;
        p{
            a{
@@ -104,11 +104,11 @@ export default {
     .resi{
         text-align: center;
    .res{
-      margin-top:20px;
-      width: 314px;
-      height: 43px;
+      margin-top:40px;
+      width: 640px;
+      height: 86px;
       background: orangered;
-      border-radius: 20px;
+      border-radius: 40px;
       outline:none;
     }
     }

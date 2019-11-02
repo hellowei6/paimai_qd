@@ -21,18 +21,18 @@ export default {
     flex-direction: row;
     place-content: flex-start center;
     flex-shrink: 0;
-    height: 44px;
+    height: 88px;
     width:100%;
-    margin-top:10px;
+    margin-top:20px;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: center;
     img {
         display: flex;
-    width: 12px;
-    height: 9px;
-    margin-left: 3px;
-    margin-right: 3px;
+    width: 24px;
+    height: 18px;
+    margin-left: 6px;
+    margin-right: 6px;
     }
     span {
         white-space: pre-wrap;

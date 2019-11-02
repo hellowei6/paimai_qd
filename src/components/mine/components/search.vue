@@ -15,7 +15,7 @@
          <img src="" alt="" class="iconfont icon-shezhi1">
      </a>
     </div>
-    <div class="bei">
+    <!-- <div class="bei">
       <div class="bei1">
         <span>功能直达</span>
         <img src="../image/a1.png" alt="">
@@ -51,7 +51,7 @@
         </a>
         <div class="bei3"></div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -72,8 +72,8 @@ export default {
   flex-direction: row;
   align-content: flex-start;
   flex-shrink: 0;
-  width: 375px;
-  height: 89px;
+  width: 750px;
+  height: 178px;
   
   -webkit-box-align: center;
   align-items: center;
@@ -90,40 +90,40 @@ export default {
   flex-direction: row;
   align-content: flex-start;
   flex-shrink: 0;
-  width: 375px;
-  height: 47px;
-  padding: 0px 6px;
+  width: 750px;
+  height: 94px;
+  padding: 0px 12px;
   -webkit-box-align: center;
   align-items: center;
   z-index: 100;
   background-color: rgb(195, 31, 58);
  }
  .at {
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
     display: flex;
      background-color: rgb(195, 31, 58);
  }
   .zuo {
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
     display: flex;
      background-color: rgb(195, 31, 58);
   }
   .span {
-    width: 300px;
-    height: 40px;
+    width: 600px;
+    height: 80px;
     display: flex;
     font-size: 18px;
     color: #ffffff;
-    padding-left: 10px;
-    padding-top: 15px;
+    padding-left: 20px;
+    padding-top: 30px;
   }
   .sheng {
-    width: 18px;
-    height: 18px;
+    width: 36px;
+    height: 36px;
     display: flex;
-    margin-right:10px;
+    margin-right:20px;
   }
   .box {
     border: 0px solid black;
@@ -135,10 +135,10 @@ export default {
     flex-direction: row;
     align-content: flex-start;
     flex-shrink: 0;
-    width: 375px;
-    height: 44px;
-    padding: 0px 6px;
-    top: 40px;
+    width: 750px;
+    height: 88px;
+    padding: 0px 12px;
+    top: 80px;
     left: 0px;
     -webkit-box-align: center;
     align-items: center;
@@ -147,12 +147,12 @@ export default {
   }
   .sp1 {
     
-    font-size: 14px;
-    margin-left: 5px;
+    font-size: 28px;
+    margin-left: 10px;
     color: rgb(255, 255, 255);
-    line-height: 10px;
-    width: 143px;
-    height:18px;
+    line-height: 20px;
+    width: 286px;
+    height:36px;
   }
   .sp2 {
       white-space: pre-wrap;
@@ -165,7 +165,7 @@ export default {
     align-content: flex-start;
     flex-shrink: 0;
     font-size: 13px;
-    margin-right: 6px;
+    margin-right: 12px;
     color: rgb(255, 255, 255);
   }
   .ax {
@@ -173,9 +173,9 @@ export default {
     display: flex;
     position: absolute;
     top:0px;
-    right: 18px;
-    width:80px;
-    height:18px;
+    right: 36px;
+    width:160px;
+    height:36px;
      background-color: rgb(195, 31, 58);
     -webkit-box-orient: horizontal;
     flex-direction: row;
@@ -183,12 +183,12 @@ export default {
     align-items: center;
   }
   .ax img {
-    width:16px;
-    height:16px;
+    width:32px;
+    height:32px;
       color:#ffff;
        position: absolute;
     top:0px;
-    right: -5px;
+    right: -10px;
   }
   .bei {
     z-index: 100;
@@ -201,10 +201,10 @@ export default {
     align-content: flex-start;
     flex-shrink: 0;
    
-    width: 375px;
-    height: 250px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    width: 750px;
+    height: 500px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
     background-image: linear-gradient(rgba(18, 19, 20, 0.95), rgba(42, 42, 43, 0.95));
     padding-top: 0px;
   }
@@ -218,8 +218,8 @@ export default {
     flex-direction: row;
     align-content: flex-start;
     flex-shrink: 0;
-    height: 27px;
-    margin-top: 13px;
+    height: 54px;
+    margin-top: 26px;
     -webkit-box-align: center;
     align-items: center;
   }
@@ -235,15 +235,15 @@ export default {
     flex: 1 1 0%;
     font-size: 17px;
     color: rgb(255, 255, 255);
-    line-height: 17px;
-    margin-left: 18px;
+    line-height: 34px;
+    margin-left: 36px;
     -webkit-box-flex: 1;
   }
   .bei1 img {
     display: flex;
-    width: 16px;
-    height: 16px;
-    margin-right: 18px;
+    width: 32px;
+    height: 32px;
+    margin-right: 36px;
   }
   .bei2 {
     border: 0px solid black;
@@ -254,21 +254,21 @@ export default {
     flex-flow: row wrap;
     place-content: flex-start space-between;
     flex-shrink: 0;
-    width: 375px;
-    height: 191px;
-    padding: 0px 18px 18px;
+    width: 750px;
+    height: 382px;
+    padding: 0px 36px 36px;
     -webkit-box-pack: justify;
   }
   a {
     text-decoration: none;
     position: relative;
-    width: 75px;
-    height: 80px;
-    margin-top: 13px;
+    width: 150px;
+    height: 160px;
+    margin-top: 26px;
     display: flex;
     -webkit-box-orient: vertical;
     flex-direction: column;
-    border-radius: 12px;
+    border-radius: 24px;
     background-color: rgba(0, 0, 0, 0.4);
     -webkit-box-pack: center;
     justify-content: center;
@@ -277,9 +277,9 @@ export default {
   }
   img {
     display: flex;
-    width: 24px;
-    height: 24px;
-    margin-bottom: 9px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
   }
   span {
     white-space: pre-wrap;
@@ -294,8 +294,8 @@ export default {
     font-size: 12px;
     color: rgb(255, 255, 255);
     text-align: center;
-    height: 12px;
-    line-height: 12px;
+    height: 24px;
+    line-height: 24px;
   }
   .bei3 {
     border: 0px solid black;
@@ -306,9 +306,9 @@ export default {
     flex-direction: column;
     align-content: flex-start;
     flex-shrink: 0;
-    width: 75px;
-    height: 80px;
-    margin-top: 13px;
+    width: 150px;
+    height: 160px;
+    margin-top: 26px;
   }
  
 }

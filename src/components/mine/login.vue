@@ -42,15 +42,13 @@ export default {
   },
   methods: {
     login() {
-      axios
-        .get(
+      axios.get(
           `http://localhost:8000?username=${this.userName}&pwd=${this.password}`
-        )
-        .then(data => {
-          window.console.log(data.data.code);
+        ).then(data=> {
+          window.console.log(data);
           this.codeList = data.data.code;
           if (this.codeList == "200") {
-            this.$router.push("/content");
+            this.$router.push("/loginok");
           }
         });
     }
@@ -65,59 +63,59 @@ export default {
   text-align: center;
 
   img {
-    width: 80px;
-    height: 80px;
-    margin-top: 47px;
+    width: 160px;
+    height: 160px;
+    margin-top: 100px;
     display: inline-block;
   }
   .name {
-    margin-top: 30px;
-    width: 329px;
-    height: 40px;
-    border-bottom: 1px solid orangered;
+    margin-top: 60px;
+    width: 660px;
+    height: 80px;
+    border-bottom: 2px solid orangered;
     // text-align: center;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 40px;
     .ipt1 {
-      width: 290px;
-      height: 40px;
+      width: 580px;
+      height: 80px;
       display: inline-block;
-      // float: left;
+      float: left;
       outline: none;
     }
   }
   .password {
-    margin-top: 30px;
-    width: 329px;
-    height: 40px;
-    line-height: 40px;
-    border-bottom: 1px solid orangered;
+    margin-top: 60px;
+    width: 660px;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 2px solid orangered;
     // text-align: center;
     margin: auto;
     .ipt2 {
-      width: 290px;
-      height: 40px;
+      width: 580px;
+      height: 80px;
       display: inline-block;
-      // float: left;
+      float: left;
       outline: none;
     }
   }
   .left {
     display: inline-block;
-    // float: left;
-    margin-left: 40px;
+    float: left;
+    margin-left: 80px;
   }
   .right {
     display: inline-block;
-    // float: right;
-    margin-right: 40px;
+    float: right;
+    margin-right: 80px;
   }
   button {
-    margin-top: 20px;
-    width: 314px;
-    height: 43px;
+    margin-top: 40px;
+    width: 640px;
+    height: 86px;
     background: orangered;
-    border-radius: 20px;
+    border-radius: 40px;
     outline: none;
   }
 }

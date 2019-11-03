@@ -83,11 +83,19 @@ export function getCateList(){
     return axios.get("allCateList")
 }
 
+<<<<<<< HEAD
+//获取内容
+=======
 
+>>>>>>> 87e8c354d23984565a09b1c3f51de4528d3b4c9e
 export function getShoppingList(){
     return axios.get("shoppingList")
 }
+
+
 // 1.获取banner图
+<<<<<<< HEAD
+=======
 export function getMsProduct1(){
     return axios.get('msProduct1')
 }
@@ -96,6 +104,7 @@ export function getRotation(){
     return axios.get('rotation')
 }
 
+>>>>>>> 87e8c354d23984565a09b1c3f51de4528d3b4c9e
 
 
 //关注提醒

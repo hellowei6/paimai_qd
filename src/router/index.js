@@ -16,6 +16,11 @@ import Three from '../components/home/components/three.vue'
 import Four from '../components/home/components/four.vue'
 import Searchall from '../components/home/components/searchall.vue'
 import serch1 from '../components/classify/compontents/serch1.vue'
+import base from '../components/classify/compontents/base.vue'
+import first from '../components/classify/compontents/first.vue'
+import second from '../components/classify/compontents/second.vue'
+import third from '../components/classify/compontents/third.vue'
+
 import One1 from "../components/focus/components/one.vue"
 import Two1 from "../components/focus/components/two.vue"
 import Three1 from "../components/focus/components/three.vue"
@@ -63,7 +68,26 @@ let routes = [
     },
     {
         path:'/serch1',
-        component:serch1,
+        component:serch1
+    },
+    {
+        path:'/base',
+        component:base,
+        resirect:"/base/first",
+        children:[
+            {
+                path:'first',
+                component:first
+            },
+            {
+                path:'second',
+                component:second
+            },
+            {
+                path:'third',
+                component:third
+            }
+        ]
     },
     {
         path: '/circle',

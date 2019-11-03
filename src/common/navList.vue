@@ -33,7 +33,8 @@
   left: 0;
   width:100%;
   display: flex;
-  padding: 0
+  padding: 0;
+    height: 98px
 }
 .nav li {
   display: flex;

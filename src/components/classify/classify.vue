@@ -25,12 +25,13 @@ import catelist from './compontents/catelist.vue'
 import jewellery1 from './compontents/jewellery1.vue'
 import {getShoppingList} from '@/api'
 
+
 export default {
   
   data() {
     return {
       mylist: [],
-      scroll:''
+      scroll:'',
     }
   },
   
@@ -46,7 +47,6 @@ export default {
   },
   mounted() {
      // console.log(this.$store)
-     
     this.$store.state.eventBus.$on('myscroll', (index)=> {
       // window.console.log("触发滚动")
       // 获取index索引值
@@ -57,12 +57,15 @@ export default {
       var allDiv = cright.getElementsByClassName('jewellery')
       window.console.log(allDiv[index].offsetTop)
       // window.scrollTo(allDiv[index].offsetTop)
-      window.scrollTo(0, allDiv[index].offsetTop-50)
-    })
+      window.scrollTo(0, allDiv[index].offsetTop-50);
+      this.topHeight=allDiv[index].offsetTop;
+      // window.console.log();
+      });
+    },
     
-  }
-  
-};
+
+}
+
 </script>
 <style lang="less" scoped>
 .content{

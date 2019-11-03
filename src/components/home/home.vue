@@ -30,7 +30,7 @@
     <!-- 回到顶部 -->
     <gotop v-if="hide2" class="gotop" ></gotop>
     <!-- 猜你喜欢 -->
-    <like v-if="hide1" class="like"></like>
+    <like v-if="hide1" class="like" ></like>
   </div>
 </template>
 <script>
@@ -71,27 +71,29 @@ export default {
     window.onscroll=()=>{
       var h=document.documentElement.scrollTop||document.body.scrollTop;
       window.console.log(h);
-      if(h>2000){
+      if(h>=2000){
         this.hide2=true;
         this.isShow=false;
             this.$refs.nav.hide=false;
             this.hide1=true;
+            this.hide1.style
 
-      }else if(h>1350){
+      }else if(h>=1350){
            this.hide2=false;
             this.isShow=false;
             this.$refs.nav.hide=false;
             this.hide1=true;
-         }else if(h>200){
+         }else if(h>=200){
            this.hide2=false;
             this.isShow=false;
             this.$refs.nav.hide=true;
             this.hide1=false;    
-         }else{
+         }else if(h<200){
+           this.hide1=false;
            this.hide2=false;
            this.isShow=true;
            this.$refs.nav.hide=false;
-            this.hide1=false;
+            
          }
          
     }

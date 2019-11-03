@@ -48,7 +48,7 @@ export default {
     .line{
         width: 45px;
         height: 1px;
-        background: black;
+       background:black;
         position: absolute;
         left: 184px;
         top: 142px;

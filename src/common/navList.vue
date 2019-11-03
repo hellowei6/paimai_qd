@@ -1,10 +1,6 @@
 <template>
   <ul class="nav">
-<<<<<<< HEAD
     <router-link tag="li" to="/home/one">
-=======
-    <router-link tag="li" to="/home">
->>>>>>> 7926e3bf5c95c371490c48550267a224d19a6db5
     <i class="iconfont icon-shouyexiantiao"></i>
       首页
     </router-link>
@@ -37,12 +33,8 @@
   left: 0;
   width:100%;
   display: flex;
-<<<<<<< HEAD
   padding: 0;
     height: 98px
-=======
-  padding: 0
->>>>>>> 87e8c354d23984565a09b1c3f51de4528d3b4c9e
 }
 .nav li {
   display: flex;
@@ -50,26 +42,15 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-<<<<<<< HEAD
       /* width: 75px;
     height: 49px; */
 }
 .nav li i {
   font-size: 50px;
-=======
-}
-.nav li i {
-  font-size: 50px;
-
->>>>>>> 87e8c354d23984565a09b1c3f51de4528d3b4c9e
 }
 
 .router-link-active {
   color: red;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 87e8c354d23984565a09b1c3f51de4528d3b4c9e
 
 </style>

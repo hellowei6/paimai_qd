@@ -5,27 +5,65 @@ import Classify from '../components/classify/classify.vue'
 import Circle from '../components/circle/circle.vue'
 import Focus from '../components/focus/focus.vue'
 import Mine from '../components/mine/mine.vue'
+import My from "../components/circle/components/my.vue"
+import Question from "../components/circle/components/question.vue"
+import Whole1 from "../components/circle/components/whole1.vue"
+import resigter from '../components/mine/resigter.vue'
+import login from '../components/mine/login.vue'
+import One from '../components/home/components/one.vue'
+import Two from '../components/home/components/two.vue'
+import Three from '../components/home/components/three.vue'
+import Four from '../components/home/components/four.vue'
+<<<<<<< HEAD
+import Searchall from '../components/home/components/searchall.vue'
+=======
+>>>>>>> 7926e3bf5c95c371490c48550267a224d19a6db5
 import serch1 from '../components/classify/compontents/serch1.vue'
 import base from '../components/classify/compontents/base.vue'
 import first from '../components/classify/compontents/first.vue'
 import second from '../components/classify/compontents/second.vue'
 import third from '../components/classify/compontents/third.vue'
 
-import One from "../components/focus/components/one.vue"
-import Two from "../components/focus/components/two.vue"
-import Three from "../components/focus/components/three.vue"
-import Four from "../components/focus/components/four.vue"
+import One1 from "../components/focus/components/one.vue"
+import Two1 from "../components/focus/components/two.vue"
+import Three1 from "../components/focus/components/three.vue"
+import Four1 from "../components/focus/components/four.vue"
 
 Vue.use(VueRouter);
 
 let routes = [
     {
         path: '/',
-        resirect:'/home'
+        resirect: '/home'
     },
     {
         path: '/home',
-        component: Home
+        // component: Home,
+        component: Home,
+        resirect:"/home/one",
+        children:[
+            {
+                path:"one",
+                component:One,
+                
+            },
+            {
+                path:"two",
+                component:Two
+            },
+            {
+                path:"three",
+                component:Three
+            },
+            {
+                path:"four",
+                component:Four
+            },
+        ]
+    },
+    {
+        path: '/searchall',
+        component: Searchall
     },
     {
         path: '/classify',
@@ -33,6 +71,7 @@ let routes = [
     },
     {
         path:'/serch1',
+<<<<<<< HEAD
         component:serch1
     },
     {
@@ -53,10 +92,27 @@ let routes = [
                 component:third
             }
         ]
+=======
+        component:serch1,
+>>>>>>> 87e8c354d23984565a09b1c3f51de4528d3b4c9e
     },
     {
         path: '/circle',
-        component: Circle
+        component: Circle,
+        children:[
+            {
+             path:'my',
+             component:My
+            },
+            {
+             path:'question',
+             component:Question
+            },
+            {
+                path:'whole1',
+                component:Whole1
+            }
+        ]
     },
     {
         path: '/focus',
@@ -65,31 +121,57 @@ let routes = [
         children:[
             {
                 path:"one",
-                component:One
+                component:One1
             },
             {
                 path:"two",
-                component:Two
+                component:Two1
             },
             {
                 path:"three",
-                component:Three
+                component:Three1
             },
             {
                 path:"four",
-                component:Four
-            }
+                component:Four1
+            },
         ]
     },
     {
         path: '/mine',
-        component: Mine
+        component: login
+    },
+    {
+        path: '/resigter',
+        component: resigter
+    },
+    {
+        path: '/login',
+        component: login
+    },
+    {
+        path: '/content',
+        component: Mine,
+        // component: Focus,
+       
+    },
+    {
+        path: '/classify',
+        component: Classify
+    },
+    {
+          path:'/loginok',
+          component:Mine
+    },
+    {
+        path: '/circle',
+        component: Circle
     },
     {
         path: '*',
-        resirect:'/home'
+        resirect: '/home'
     },
-   
+
 ]
 
 let router = new VueRouter({

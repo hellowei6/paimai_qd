@@ -4,6 +4,7 @@ import router from './router'
 import VueLazyload from 'vue-lazyload'
 import axios from 'axios'
 import "./common/css/reset.css"
+// import $ from  'jquery'
 
 import 'lib-flexible'
 Vue.prototype.$http = axios

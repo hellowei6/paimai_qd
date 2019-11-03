@@ -5,10 +5,10 @@ import Classify from '../components/classify/classify.vue'
 import Circle from '../components/circle/circle.vue'
 import Focus from '../components/focus/focus.vue'
 import Mine from '../components/mine/mine.vue'
-import One from "../components/focus/components/one.vue"
-import Two from "../components/focus/components/two.vue"
-import Three from "../components/focus/components/three.vue"
-import Four from "../components/focus/components/four.vue"
+import One1 from "../components/focus/components/one.vue"
+import Two1 from "../components/focus/components/two.vue"
+import Three1 from "../components/focus/components/three.vue"
+import Four1 from "../components/focus/components/four.vue"
 
 Vue.use(VueRouter);
 
@@ -36,19 +36,19 @@ let routes = [
         children:[
             {
                 path:"one",
-                component:One
+                component:One1
             },
             {
                 path:"two",
-                component:Two
+                component:Two1
             },
             {
                 path:"three",
-                component:Three
+                component:Three1
             },
             {
                 path:"four",
-                component:Four
+                component:Four1
             }
         ]
     },

@@ -1,91 +1,171 @@
 <template>
-    <div id="a">
-   <div class="menuList">
-      <ul>
-        <li v-for="(item,index) in list" :key="item.id" :class="{active:num==index}" @click="getNum(index)">
-          {{item}}
-        </li>
-      </ul>
+  <!-- 底部 -->
+
+  <div class="home">
+    <div class="back3"></div>
+    <div class="back1" v-if="isShow">
+      <div class="back2"></div>
     </div>
-    <div class="tabCon">
-      <!-- <div v-for='(itemCon,index) in tabContents' v-show="index == num">
-        {{itemCon}}
-      </div> -->
-      <div v-for="(itemCon,index) in tabContents" v-show="index == num" :key="index">
-          {{itemCon}}
-      </div>
-    </div>
-    </div>
+    <!-- 头部 -->
+    <top class="top"></top>
+    <!-- 假一赔三 -->
+    <tel></tel>
+    <!-- 双11 -->
+    <shuang></shuang>
+
+    <!-- 拍卖 -->
+    <pai></pai>
+    <!-- 精挑细选 -->
+    <jing></jing>
+    <!-- 发现惊喜 -->
+    <superise></superise>
+    <!-- 拍卖专场 -->
+    <live></live>
+    <!-- 全部商品 -->
+    <all></all>
+
+    <!-- 动态布局 -->
+    <!-- 导航 -->
+    <navList ref="nav"></navList>
+    <!-- 回到顶部 -->
+    <gotop v-if="hide2" class="gotop" ></gotop>
+    <!-- 猜你喜欢 -->
+    <like v-if="hide1" class="like"></like>
+  </div>
 </template>
 <script>
+import top from "./components/top.vue";
+import tel from "./components/tel.vue";
+import shuang from "./components/shuang.vue";
+import pai from "./components/pai.vue";
+import jing from "./components/jing.vue";
+import superise from "./components/superise.vue";
+import live from "./components/live.vue";
+import all from "./components/all.vue";
+import like from "./components/like.vue";
+import navList from "./components/nav.vue";
+import gotop from "./components/gotop.vue";
 
 export default {
- el: "#a",
-      data() {
-        return {
-          num: 0,
-          list: ["张三丰", "独孤求败", "周伯通"],
-          tabContents: [
-            "张三丰，名君宝，字符元，道号三丰。武林至尊，民族英雄 、内拳始祖、太极始祖、武学泰斗、龙行书法始祖张三丰集各派绝学于一身，威震武林，造诣已达炼虚合道至高极境 [1]  ，元末明初真人，武当山道人，武当派始祖，正史记载宋理宗淳佑七年(1247年) 出生辽东，14岁考取文武状元，18岁担任博陵县令，（1280年）辞官出家修道，拜火龙真人为师，武林盟主张三丰时隐时现，至今行踪不定，清朝道光年间曾出现在峨眉山。", 
-            "独孤求败，自号“剑魔”，纵横江湖三十馀载，杀尽仇寇，败尽英雄，天下更无抗手，无可奈何，惟隐居深谷，以雕为友。呜呼，生平求一敌手而不可得，诚寂寥难堪也。在小说中从未出场过，只曾在人物的口中提及。",
-            "周伯通不是金大师小说中的主角，也不是塑造的最丰满、最完善的形象，更不是侠客或英雄的代表，而且就武侠小说最基本的要素-武功、武学所达到的境界来说，周伯通也不是绝顶高手，但毫无疑问，周伯通是金大师所塑造的所有人物中最有意思的一位，至少是最有意思的人物之一。"],
-        }
-      },
+  data(){
+    return{
+      isShow:true,
+      hide1:true,
+      hide2:true
+    }
+  },
+  components: {
+    top,
+    tel,
+    shuang,
+    pai,
+    jing,
+    superise,
+    live,
+    all,
+    like,
+    navList,
+    gotop,
+  },
+  mounted(){
+    window.onscroll=()=>{
+      var h=document.documentElement.scrollTop||document.body.scrollTop;
+      window.console.log(h);
+      if(h>2000){
+        this.hide2=true;
+        this.isShow=false;
+            this.$refs.nav.hide=false;
+            this.hide1=true;
 
-      methods: {
-        getNum(index) {
-          this.num = index;
-        }
-      }
-}
+      }else if(h>1350){
+           this.hide2=false;
+            this.isShow=false;
+            this.$refs.nav.hide=false;
+            this.hide1=true;
+         }else if(h>200){
+           this.hide2=false;
+            this.isShow=false;
+            this.$refs.nav.hide=true;
+            this.hide1=false;    
+         }else{
+           this.hide2=false;
+           this.isShow=true;
+           this.$refs.nav.hide=false;
+            this.hide1=false;
+         }
+         
+    }
+  },
+
+
+};
 </script>
 <style lang="less" scoped>
- 
-
-    .active {
-      color: #fff;
-      background: #e74c3c;
-    }
-
-    #app {
-      width: 800px;
-      height: 400px;
-      margin: 100px auto;
-      background-color: #fff;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
-     
-    }
-
-    .menuList {
-      width: 800px;
-      height: 60px;
-      background-color: #33344a;
-    }
-
-    ul {
+::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+.home {
+  width: 100%;
+  overflow-x: hidden;
+  .back3 {
+    // width: 100%;
+    // background: rgb(233, 234, 236);
+    // padding-inline-start: 0;
+    // -webkit-padding-start: 0;
+    // z-index: -3;
+    border: 0px solid black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(233, 234, 236);
+    z-index: -3;
+  }
+  .back1 {
+    border: 0px solid black;
+    position: absolute;
+    flex-shrink: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 560px;
+    background-color: rgb(183, 9, 19);
+    z-index: -2;
+    position: fixed;
+    top:0;
+    left:0;
+    .back2 {
+      border: 0px solid black;
+      position: absolute;
+      bottom: 0;
+      left: 0px;
       width: 100%;
-      display: flex;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      color: #717181;
-      font-size: 16px;
-      line-height: 60px;
-
+      height: 50%;
+      background-image: linear-gradient(rgb(183, 9, 19), rgb(233, 234, 236));
+      z-index: -1;
+      position: fixed;
+    top:0;
+    left:0;
     }
+  }
 
-    ul li {
-      flex: 1;
-      text-align: center;
-      cursor: pointer;
-    }
+  .like{
+    width:100%;
+    position: fixed;
+    left:0;
+    top:88px;
+    z-index: 99;
+    background: white;
+  }
 
-    .tabCon {
-      width: 700px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      color: #999;
-      font-size: 14px;
-      background-color: #fff;
-    }
+
+  .gotop{
+    position:fixed;
+    bottom:10%;
+    right:5%;
+    z-index: 99;
+  }
+}
 </style>

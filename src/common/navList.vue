@@ -12,7 +12,7 @@
       <i class="iconfont icon-quanquandongtai"></i>
       兴趣圈
     </router-link>
-    <router-link tag="li" to="/focus">
+    <router-link tag="li" to="/focus/one">
       <i class="iconfont icon-naozhong"></i>
       关注
     </router-link>
@@ -34,11 +34,7 @@
   width: 100%;
   display: flex;
   padding: 0;
-<<<<<<< HEAD
     height: 98px
-=======
-  
->>>>>>> asf
 }
 .nav li {
   display: flex;
@@ -46,24 +42,15 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-<<<<<<< HEAD
       /* width: 75px;
     height: 49px; */
 }
 .nav li i {
   font-size: 50px;
-=======
-}
-.nav li i {
-  font-size: 22px;
->>>>>>> asf
 }
 .router-link-active {
   color: red;
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> asf
 </style>

@@ -12,7 +12,10 @@
     </div>
     <!-- 右边流拍 -->
     <div class="liu">
-      <span>流拍降价</span>
+      <router-link to='/base/first'>
+        <span>流拍降价</span>
+      </router-link>
+      
     </div>
     <!-- 右边图片 -->
     <img class="drop" src="../images/drop.png" alt="">
@@ -32,6 +35,7 @@ export default {
     display: flex;
     padding: 0 12px;
     height: 88px;
+    width: 100%;
   .zuo {
     display: flex;
     width: 68px;
@@ -40,7 +44,7 @@ export default {
   }
   .sou {
     display: flex;
-    width: 68%;
+    width: 65%;
     height: 64px;
     border-radius: 30px;
     align-items: center;
@@ -60,24 +64,27 @@ export default {
   }
   .liu {
        display: flex;
-       width: 48px;
-       height: 40px;
+       width: 7%;
+       height: 5%;
        float: left;
-       margin: 5px 20px 0 10px;
-       
+       margin: 6px 10px 0 10px;
+       line-height: 20px;
+       padding-top: 15px;
     span {
       width: 100%;
-      line-height: 20px;
-      padding-top: 15px;
+      // line-height: 10px;
+      // padding-top: 15px;
       text-align: center;
+      font-size: 20px;
+      color: #000000;
     }
   }
   .drop{
       display: flex;
-      width: 5%;
-      height: 50%;
+      width: 4%;
+      height: 45%;
       margin-top: 16px;
-      margin-left: 4px;
+      margin-left: 8px;
   }
 }
 </style>

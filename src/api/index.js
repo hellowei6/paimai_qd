@@ -16,41 +16,14 @@ export function getCateList(){
     return axios.get("allCateList")
 }
 
-// // 获取不同分类下的数据
-// export function getCateContent(id){
-//     return axios.get("cateContent?id="+id)
-// }
-
-// // 玉翠珠宝
-// export function getJewellery(){
-//     return axios.get("zhubao")
-// }
-// // 奢侈品
-// export function getExtrave(){
-//     return axios.get("Luxury")
-// }
-// // 紫砂陶瓷
-// export function getCeramics(){
-//     return axios.get("purple")
-// }
-// // 司法/资产
-// export function getJudicial(){
-//     return axios.get("law")
-// }
-
+//获取内容
 export function getShoppingList(){
     return axios.get("shoppingList")
 }
+
+
 // 1.获取banner图
-axios.interceptors.response.use(function (response) {
-    // Any status code that lie within the range of 2xx cause this function to trigger
-    // Do something with response data
-    return response.data;
-}, function (error) {
-// Any status codes that falls outside the range of 2xx cause this function to trigger
-// Do something with response error
-    return Promise.reject(error);
-});
+
 
 //关注提醒
 export function getALLfocus() {

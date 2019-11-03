@@ -6,6 +6,10 @@ import Circle from '../components/circle/circle.vue'
 import Focus from '../components/focus/focus.vue'
 import Mine from '../components/mine/mine.vue'
 import serch1 from '../components/classify/compontents/serch1.vue'
+import base from '../components/classify/compontents/base.vue'
+import first from '../components/classify/compontents/first.vue'
+import second from '../components/classify/compontents/second.vue'
+import third from '../components/classify/compontents/third.vue'
 
 import One from "../components/focus/components/one.vue"
 import Two from "../components/focus/components/two.vue"
@@ -29,8 +33,26 @@ let routes = [
     },
     {
         path:'/serch1',
-        component:serch1,
-        component: Classify
+        component:serch1
+    },
+    {
+        path:'/base',
+        component:base,
+        resirect:"/base/first",
+        children:[
+            {
+                path:'first',
+                component:first
+            },
+            {
+                path:'second',
+                component:second
+            },
+            {
+                path:'third',
+                component:third
+            }
+        ]
     },
     {
         path: '/circle',

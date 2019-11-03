@@ -1,8 +1,10 @@
 <template>
     <div class="jewellery" ref="myul">
+        <div class="line"></div>
         <div class="jewellery-top">
-             <img :src="data.img" alt="">
+            <img :src="data.img" alt="">
         </div>
+        <div class="line1"></div>
         <div class="jewellery-b">
             <ul>
                 <li class="ziti">
@@ -38,10 +40,27 @@ export default {
 </script>
 <style lang="less" scoped>
 .jewellery{
-    margin: 80px 0 0 0;
+    margin: 90px 0 0 0;
     width: 600px;
 //     // height: 1158px;
     margin-left: 25%;
+    position: relative;
+    .line{
+        width: 45px;
+        height: 1px;
+        background: black;
+        position: absolute;
+        left: 184px;
+        top: 142px;
+    };
+    .line1{
+        width: 45px;
+        height: 1px;
+        background: black;
+        position: absolute;
+        left: 380px;
+        top: 142px;
+    };
     .jewellery-top{
        margin:24px 26px 0 24px;
        height: 100px;

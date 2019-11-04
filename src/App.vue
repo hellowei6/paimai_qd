@@ -7,6 +7,7 @@
 
 <script>
 import navList from '@/common/navList.vue'
+// import navList from 'common/navList.vue'
 
 export default {
   

@@ -85,22 +85,23 @@ export function getCateList(){
     return axios.get("allCateList")
 }
 
-
+//获取内容
 export function getShoppingList(){
     return axios.get("shoppingList")
 }
+
+
 // 1.获取banner图
-export function getMsProduct1(){
-    return axios.get('msProduct1')
-}
-
-export function getRotation(){
-    return axios.get('rotation')
-}
-
 
 
 //关注提醒
 export function getALLfocus() {
     return axios.get("focusShopping")
+}
+
+export function getMsProduct1() {
+    return axios.get("msProduct1")
+}
+export function getRotation() {
+    return axios.get("rotation")
 }

@@ -1,5 +1,6 @@
 <template>
   <div class="one">
+   <All></All>
     <Title></Title>
     <div class="tabCon">
       <div class="allxia">
@@ -29,9 +30,11 @@
 <script>
 import { getALLfocus } from "@/api";
 import Title from "../components/title";
+import All from "../components/all"
 export default {
   components: {
-    Title
+    Title,
+    All
   },
   data() {
     return {
@@ -61,7 +64,7 @@ export default {
         // background: #666;
         .margin {
           width: 96%;
-          // background: rgb(194, 197, 188);
+          background: rgb(255, 255, 255);
           height: 420px;
           border-radius: 15px;
           margin: 2%;

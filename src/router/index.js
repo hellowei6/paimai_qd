@@ -14,15 +14,12 @@ import One from '../components/home/components/one.vue'
 import Two from '../components/home/components/two.vue'
 import Three from '../components/home/components/three.vue'
 import Four from '../components/home/components/four.vue'
-
-
-
 import Searchall from '../components/home/components/searchall.vue'
-
-
-
-
 import serch1 from '../components/classify/compontents/serch1.vue'
+import base from '../components/classify/compontents/base.vue'
+import first from '../components/classify/compontents/first.vue'
+import second from '../components/classify/compontents/second.vue'
+import third from '../components/classify/compontents/third.vue'
 
 
 import One1 from "../components/focus/components/one.vue"
@@ -35,12 +32,12 @@ Vue.use(VueRouter);
 let routes = [
     {
         path: '/',
-        resirect: '/home'
+        redirect: '/home'
     },
     {
         path: '/home',
         component: Home,
-        resirect:"/home/one",
+        redirect:"/home/one",
         children:[
             {
                 path:"one",
@@ -71,11 +68,31 @@ let routes = [
     },
     {
         path:'/serch1',
-        component:serch1,
+        component:serch1
+    },
+    {
+        path:'/base',
+        component:base,
+        redirect:"/base/first",
+        children:[
+            {
+                path:'first',
+                component:first
+            },
+            {
+                path:'second',
+                component:second
+            },
+            {
+                path:'third',
+                component:third
+            }
+        ]
     },
     {
         path: '/circle',
         component: Circle,
+        redirect:"/circle/my",
         children:[
             {
              path:'my',
@@ -94,7 +111,7 @@ let routes = [
     {
         path: '/focus',
         component: Focus,
-        resirect:"/focus/one",
+        redirect:"/focus/one",
         children:[
             {
                 path:"one",
@@ -129,6 +146,7 @@ let routes = [
     {
         path: '/content',
         component: Mine,
+ 
        
     },
     {
@@ -147,7 +165,6 @@ let routes = [
         path: '*',
         resirect: '/home'
     },
-
 ]
 
 let router = new VueRouter({

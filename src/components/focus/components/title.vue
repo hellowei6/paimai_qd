@@ -1,6 +1,6 @@
 <template>
   <div class="shangbu">
-    <strong>关注上新</strong>
+    <b>关注上新</b>
     <span>你关注的有新品上拍了</span>
   </div>
 </template>
@@ -10,9 +10,11 @@ export default {};
 <style lang="less" scoped>
   .shangbu {
       margin: 20px;
-      padding-top: 100px;
-    strong {
-      font-size: 38px;
+      padding-top: 15px;
+    b {
+      font-size: 36px;
+      color: #000;
+      padding-left: 10px;
     }
     span {
       padding-left: 20px;

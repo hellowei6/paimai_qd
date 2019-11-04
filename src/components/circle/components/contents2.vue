@@ -60,10 +60,10 @@ export default {
         width:674px;
         height:80px;
         .top-left{
-            width:306px;
+            width:310px;
             height:56px;
         img{
-            width:52px;
+            width:26px;
             height:52px;
             border-radius: 26px;
             line-height: 26px;

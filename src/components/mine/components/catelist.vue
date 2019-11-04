@@ -18,16 +18,16 @@
 </script>
 <style lang="less" scoped>
    .catelist {
-    width: 375px;
-    height: 53px;
-    margin-top:90px;
+    width: 750px;
+    height: 106px;
+    margin-top:180px;
     background-color: rgb(255, 255, 255);
-     padding-top:10px;
+     padding-top:20px;
    
   .zuo {
       text-decoration: none;
-    height: 60px;
-    width: 187px;
+    height: 120px;
+    width: 374px;
     text-align: center;
     -webkit-box-align: center;
     align-items: center;
@@ -35,8 +35,8 @@
   }
   .you {
         text-decoration: none;
-    height: 53px;
-    width: 187px;
+    height: 106px;
+    width: 374px;
     text-align: center;
     -webkit-box-align: center;
     align-items: center;
@@ -66,7 +66,7 @@
     align-content: flex-start;
     flex-shrink: 0;
     font-size: 12px;
-    margin-top: 3px;
+    margin-top: 6px;
     color: rgb(102, 102, 102);
   }
   .you1 {
@@ -94,7 +94,7 @@ white-space: pre-wrap;
     align-content: flex-start;
     flex-shrink: 0;
     font-size: 12px;
-    margin-top: 3px;
+    margin-top: 6px;
     color: rgb(102, 102, 102);
   }
   .wei {
@@ -106,8 +106,8 @@ white-space: pre-wrap;
     flex-direction: column;
     align-content: flex-start;
     flex-shrink: 0;
-    height: 6px;
-    width:375px;
+    height: 12px;
+    width:750px;
   }
    }
 </style>

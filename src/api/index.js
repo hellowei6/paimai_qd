@@ -7,6 +7,8 @@ axios.interceptors.response.use(function(response){
 })
 
 axios.defaults.baseURL = "http://127.0.0.1:3000/ali/"
+
+
 export function getBanner() {
     return  axios.get("public")
 }
@@ -83,6 +85,7 @@ export function getCateList(){
     return axios.get("allCateList")
 }
 
+//获取内容
 export function getShoppingList(){
     return axios.get("shoppingList")
 }
@@ -102,4 +105,11 @@ export function getRotation(){
 //关注提醒
 export function getALLfocus() {
     return axios.get("focusShopping")
+}
+
+export function getMsProduct1() {
+    return axios.get("msProduct1")
+}
+export function getRotation() {
+    return axios.get("rotation")
 }

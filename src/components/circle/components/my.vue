@@ -41,7 +41,7 @@ export default {
     flex-direction: column;
     align-content: flex-start;
     flex-shrink: 0;
-    width: 750px;
+    width: 720px;
     margin: 20px 18px;
     background-color:#E1E1E1;
     background: #FFFFFF;

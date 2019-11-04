@@ -86,8 +86,8 @@ export default {
      text-align: center;
      flex-direction: row;
      justify-content: center;
-     left: -80px;
-     top: 60px;
+     left: -40px;
+     top: 70px;
      z-index: 99;
      position: relative;
      position: fixed;

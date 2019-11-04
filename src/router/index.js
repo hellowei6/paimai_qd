@@ -21,6 +21,7 @@ import first from '../components/classify/compontents/first.vue'
 import second from '../components/classify/compontents/second.vue'
 import third from '../components/classify/compontents/third.vue'
 
+
 import One1 from "../components/focus/components/one.vue"
 import Two1 from "../components/focus/components/two.vue"
 import Three1 from "../components/focus/components/three.vue"
@@ -37,7 +38,6 @@ let routes = [
     },
     {
         path: '/home',
-        // component: Home,
         component: Home,
         redirect:"/home/one",
         children:[
@@ -94,6 +94,7 @@ let routes = [
     {
         path: '/circle',
         component: Circle,
+        redirect:"/circle/my",
         children:[
             {
              path:'my',
@@ -112,7 +113,7 @@ let routes = [
     {
         path: '/focus',
         component: Focus,
-        resirect:"/focus/one",
+        redirect:"/focus/one",
         children:[
             {
                 path:"one",
@@ -143,7 +144,7 @@ let routes = [
     },
     {
         path: '/mine',
-        component: login
+        component:Mine
     },
     {
         path: '/resigter',

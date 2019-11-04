@@ -103,8 +103,7 @@ export default {
     -webkit-box-flex: 1;
     padding-bottom: 20px;
     padding-right:20px;
-    margin-right: 20px;
-    margin-left: -60px;
+    margin-left: 15px;
     background-color:#E1E1E1;
     overflow: scroll;
          ul{
@@ -125,7 +124,7 @@ export default {
               flex-direction: column;
               align-content: flex-start;
               flex-shrink: 0;
-               width: 210px;
+               width: 260px;
                height: 308px;
                 -webkit-box-align: center;
                align-items: center;
@@ -165,7 +164,7 @@ export default {
     flex-direction: column;
     align-content: flex-start;
     flex-shrink: 0;
-    font-size: 24px;
+    font-size: 12px;
     margin-top: 16px;
     margin-bottom: 28px;
     width: 264px;

@@ -8,7 +8,7 @@
       <i class="iconfont icon-yalashefenleixiantiao"></i>
       分类
     </router-link>
-    <router-link tag="li" to="/circle">
+    <router-link tag="li" to="/circle/whole1">
       <i class="iconfont icon-quanquandongtai"></i>
       兴趣圈
     </router-link>
@@ -42,10 +42,10 @@
   justify-content: center;
   align-items: center;
   flex: 1;
+  line-height: 40px;
 }
 .nav li i {
   font-size: 50px;
-
 }
 
 .router-link-active {

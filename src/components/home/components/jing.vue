@@ -21,9 +21,9 @@
         </div>
         <span>{{item.title1}}</span>
         <div class="title">
-          <span style="margin-right:5%">当前</span>
+          <span style="margin-right:3%">当前</span>
           <span>￥</span>
-          <span style="font-size:15px;font-weight:500">{{item.title2}}</span>
+          <span style="font-size:14px;font-weight:500">{{item.title2}}</span>
         </div>
         </a>
       </div>     
@@ -154,9 +154,10 @@ export default {
         height: 8%;
         line-height: 8%;
         span {
-          font-size: 26px;
+          font-size: 20px;
           color: rgb(194, 31, 58);
           font-weight: bold;
+         
         }
       }
     }

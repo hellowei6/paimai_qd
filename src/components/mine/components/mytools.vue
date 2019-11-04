@@ -46,7 +46,7 @@ export default {
 <style lang="less" scoped>
  .mytools {
      width:100%;
-     height:204px;
+     height:408px;
      border: 0px solid black;
     position: relative;
     box-sizing: border-box;
@@ -55,7 +55,7 @@ export default {
     flex-direction: column;
     align-content: flex-start;
     flex-shrink: 0;
-    margin-top:15px;
+    margin-top:30px;
     .tools {
         white-space: pre-wrap;
     border-width: 0px 0px 0.5px;
@@ -70,14 +70,14 @@ export default {
     align-content: flex-start;
     flex-shrink: 0;
     font-size: 14px;
-    padding-left: 12px;
+    padding-left: 24px;
     color: rgb(0, 0, 0);
-    height: 36px;
-    line-height: 36px;
+    height: 72px;
+    line-height: 72px;
     }
     .box {
         width:100%;
-        height:162px;
+        height:324px;
         border: 0px solid black;
     position: relative;
     box-sizing: border-box;
@@ -90,15 +90,15 @@ export default {
     a {
         text-decoration: none;
     display: flex;
-    padding-top: 16px;
-    width: 89.8px;
-    height: 81px;
+    padding-top: 32px;
+    width: 179.6px;
+    height: 162px;
     -webkit-box-orient: vertical;
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
-    border-right: 0.5px solid rgb(230, 230, 230);
-    border-bottom: 0.5px solid rgb(230, 230, 230);
+    border-right: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(230, 230, 230);
     box-sizing: border-box;
     }
     img {
@@ -110,8 +110,8 @@ export default {
     flex-direction: column;
     align-content: flex-start;
     flex-shrink: 0;
-    height: 26px;
-    width: 26px;
+    height: 52px;
+    width: 52px;
     }
     span {
         white-space: pre-wrap;
@@ -124,7 +124,7 @@ export default {
     align-content: flex-start;
     flex-shrink: 0;
     font-size: 12px;
-    margin-top: 9px;
+    margin-top: 18px;
     color: rgb(102, 102, 102);
     }
     .gong {
@@ -136,8 +136,8 @@ export default {
     flex-direction: column;
     align-content: flex-start;
     flex-shrink: 0;
-    height: 6px;
-    width:375px;
+    height: 12px;
+    width:750px;
     }
  }
 </style>

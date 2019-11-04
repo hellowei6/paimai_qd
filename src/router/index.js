@@ -146,7 +146,7 @@ let routes = [
     {
         path: '/content',
         component: Mine,
-        // component: Focus,
+ 
        
     },
     {
@@ -165,7 +165,6 @@ let routes = [
         path: '*',
         resirect: '/home'
     },
-
 ]
 
 let router = new VueRouter({

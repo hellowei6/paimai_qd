@@ -1,7 +1,7 @@
 <template>
   <ul class="nav">
-    <router-link tag="li" to="/home/one">
-    <i class="iconfont icon-shouyexiantiao"></i>
+    <router-link tag="li" to="/home">
+      <i class="iconfont icon-shouyexiantiao"></i>
       首页
     </router-link>
     <router-link tag="li" to="/classify">
@@ -42,8 +42,7 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-      /* width: 75px;
-    height: 49px; */
+  line-height: 40px;
 }
 .nav li i {
   font-size: 50px;

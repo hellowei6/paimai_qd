@@ -34,7 +34,7 @@ export default {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100%;
+  height: 400%;
   background-color: rgb(233, 234, 236);
   z-index: -3;
 }

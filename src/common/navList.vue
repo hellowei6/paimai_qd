@@ -1,6 +1,6 @@
 <template>
   <ul class="nav">
-    <router-link tag="li" to="/home">
+    <router-link tag="li" to="/home/one">
     <i class="iconfont icon-shouyexiantiao"></i>
       首页
     </router-link>

@@ -8,8 +8,8 @@
 </template>
 <script>
 
-import BScroll from "@better-scroll/core";
-import {getCateList} from "@/api"
+import BScroll from '@better-scroll/core'
+import { getCateList } from "@/api"
 
 export default {
     data(){

@@ -129,7 +129,7 @@ export default {
     this.$nextTick(() => {
       var liWidth = this.$refs.myli[0].offsetWidth;
       this.$refs.myul.style.width =
-        (liWidth + 4) * (this.msProduct.length / 2) + 1 + "px";
+        (liWidth + 6) * (this.msProduct.length / 2)  + "px";
     });
   },
 

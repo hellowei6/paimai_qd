@@ -1,14 +1,14 @@
 <template>
   <div class="search">
     <div class="daohang">
-      <router-link tag="li" to="/circle"  class="jt">
+      <router-link tag="li" to="/focus/one"  class="jt">
         <img src="../image/daohangjiantou.png" alt />
       </router-link>
       <div class="zj">
-        <img src="//gw.alicdn.com/tfs/TB10cWPX8Cw3KVjSZR0XXbcUpXa-348-88.png" alt />
+        <span>阿里拍卖</span>
       </div>
       <div class="title">
-        <span>设置</span>
+       <img src="https://gw.alicdn.com/tfs/TB1VnFIMXzqK1RjSZFoXXbfcXXa-72-72.png" alt="">
       </div>
       <router-link tag="li" to="/focus/daohang"  class="dian">
         <!-- <router-link tag="div" to="/daohang"> -->
@@ -31,7 +31,7 @@ export default {
   width: 100%;
   // height: 20%;
   height: 95px;
-  background: rgba(255, 255, 255, 1);
+  background: rgb(224, 221, 221);
   position: fixed;
   z-index: 99;
   // left:0;
@@ -53,17 +53,19 @@ export default {
       height: 100%;
       float: left;
       text-align: center;
-      img {
-        width: 80%;
-        height: 100%;
-      }
+     span{
+         font-size: 38px;
+     }
     }
     .title {
       width: 23%;
       height: 10%;
       float: left;
-      text-align: right;
       padding-top: 7px;
+      img{
+          width: 50px;
+          float: right;
+      }
     }
     .dian {
       width: 10%;

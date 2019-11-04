@@ -25,19 +25,21 @@ import One1 from "../components/focus/components/one.vue"
 import Two1 from "../components/focus/components/two.vue"
 import Three1 from "../components/focus/components/three.vue"
 import Four1 from "../components/focus/components/four.vue"
+import daohang from "../components/focus/components/daohang.vue"
+import gengduo from "../components/focus/components/gengduo.vue"
 
 Vue.use(VueRouter);
 
 let routes = [
     {
         path: '/',
-        resirect: '/home'
+        redirect: '/home/one'
     },
     {
         path: '/home',
         // component: Home,
         component: Home,
-        resirect:"/home/one",
+        redirect:"/home/one",
         children:[
             {
                 path:"one",
@@ -73,7 +75,7 @@ let routes = [
     {
         path:'/base',
         component:base,
-        resirect:"/base/first",
+        redirect:"/base/first",
         children:[
             {
                 path:'first',
@@ -128,7 +130,16 @@ let routes = [
                 path:"four",
                 component:Four1
             },
+            {
+                path:'daohang',
+                component:daohang
+            },
+           
         ]
+    },
+    {
+        path:'/gengduo',
+        component:gengduo
     },
     {
         path: '/mine',
@@ -162,8 +173,9 @@ let routes = [
     },
     {
         path: '*',
-        resirect: '/home'
+        redirect: '/home'
     },
+  
 ]
 
 let router = new VueRouter({

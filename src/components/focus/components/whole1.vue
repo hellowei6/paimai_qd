@@ -43,7 +43,7 @@ export default {
 }
 
 .whole {
-  z-index: 99;
+  z-index: 101;
   width: 100%;
   height: 8%;
   padding-top: 12%;

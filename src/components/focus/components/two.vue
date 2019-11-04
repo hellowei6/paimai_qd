@@ -8,7 +8,7 @@
             <div class="wholeList">
               <img class="imgge" :src="item.image" alt />
               <span>{{item.span}}</span>
-              <a href>{{item.a}}</a>
+              <a :href="'http://localhost:8080/#/gengduo'">{{item.a}}</a>
               <img class="img" src="../image/jiantou.webp" alt />
             </div>
             <!-- {{item}} -->

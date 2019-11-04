@@ -8,7 +8,7 @@
             <div class="wholeList">
               <img class="imgge" :src="item.image" alt />
               <span>{{item.span}}</span>
-              <a href>{{item.a}}</a>
+              <a :href="'http://localhost:8080/#/gengduo'">{{item.a}}</a>
               <img class="img" src="../image/jiantou.webp" alt />
             </div>
             <!-- {{item}} -->
@@ -20,7 +20,7 @@
             </div>
           </div>
         </div>
-        <div></div>
+        <!-- <div></div> -->
       </div>
     </div>
   </div>
@@ -29,6 +29,7 @@
 import { getALLfocus } from "@/api";
 export default {
   components: {
+
   },
   data() {
     return {
@@ -39,45 +40,37 @@ export default {
   },
   async created() {
     this.wholeList = await getALLfocus();
-    // window.console.log(this.wholeList);
-    // window.console.log(this.item.first);
-    // this.wholeContent = this.wholeList[0].first;
-    // window.console.log(this.wholeList[0].first[0].img);
-    // window.console.log(this.wholeContent);
   }
 };
 </script>
 <style lang="less" scoped>
 .one {
-  // height: 200px;
-  padding: 90px 0 0 0;
-
+  
   .tabCon {
-    // height: 400px;
-    // height: 50%;
-
     // background: rgb(255, 255, 255);
     // width: 96%;
     // background: yellowgreen;
     // border-radius: 15px;
     // margin: 2%;
-    padding-top: 20px;
+    // padding-top: 10px;
     .allxia {
-      // z-index: 2;
+      padding-top: 120px;
       .zhongbu {
+        overflow: hidden;
+        // background: #666;
+        
         .margin {
-          //  background: rgb(255, 255, 255)
           width: 96%;
-          // background: rgb(194, 197, 188);
+          background: rgb(255, 255, 255);
+          height: 420px;
           border-radius: 15px;
           margin: 2%;
+          padding: 1%;
+          box-sizing: border-box;
           .wholeList {
             position: relative;
-            //  height: 60px;
             width: 100%;
             margin-bottom: 10px;
-            // margin-top: 50px;
-            // z-index: 1;
             .imgge {
               width: 50px;
               height: 50px;
@@ -105,29 +98,23 @@ export default {
               height: 50px;
               line-height: 50px;
               text-align: center;
-              // img {
-              //   width: 3%;
-              //   height: 45%;
-              //   position: absolute;
-              //   top: 17px;
-              //   left: 93%;
-              // }
             }
             .img {
               width: 18px;
               height: 25px;
-              // float: right;
               position: absolute;
               right: 30px;
-              // top: 50px;
               bottom: 13px;
             }
           }
           .xiabu {
+            // background: #333;
             width: 30%;
-            height: 20%;
+            height: 60%;
             float: left;
-            padding: 12px;
+            padding: 11px;
+            
+
             img {
               width: 100%;
               height: 100%;
@@ -140,18 +127,6 @@ export default {
         }
       }
     }
-    //    .xiabu {
-    //         width: 30%;
-    //         height: 20%;
-    //         float: left;
-    //         padding: 12px;
-    //         img {
-    //           width: 100%;
-    //           height: 100%;
-    //           border-radius: 15px;
-    //         }
-    //       }
-    // }
   }
 }
 </style>

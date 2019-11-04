@@ -100,8 +100,8 @@ export default {
    }
   }
   .title{
-    width:690px;
-    height:62px;
+    width:695px;
+    height:70px;
     background-color:#ffff;
     padding-left:20px;
     margin-left:20px;
@@ -132,7 +132,7 @@ export default {
   }
   .picture{
       height:424px;
-      width:690px;
+      width:695px;
  background-color:#ffff;
     padding-left:20px;
     margin-left:20px;
@@ -145,7 +145,7 @@ export default {
    }
    .access{
        height:36px;
-        width:690px;
+        width:695px;
         background-color:#ffff;
         padding-left:20px;
         margin-left:20px;
@@ -177,7 +177,7 @@ export default {
  }
  .comment{
      height:176px;
-        width:690px;
+        width:695px;
         background-color:#ffff;
         padding-left:20px;
         margin-left:20px;

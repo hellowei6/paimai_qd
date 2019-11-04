@@ -74,25 +74,26 @@ export default {
 .live {
   width: 96%;
   margin: auto;
+  margin-top:20px;
   .top {
     width: 100%;
-    height: 37px;
+    height: 74px;
     position: relative;
     .toptitle {
       height: 100%;
       line-height: 100%;
       float: left;
       .toptitle1 {
-        font-size: 16px;
+        font-size: 32px;
         color: rgb(47, 46, 47);
         line-height: 100%;
         font-weight: bold;
       }
       .toptitle2 {
-        font-size: 14px;
+        font-size: 28px;
         color: rgb(136, 136, 136);
         line-height: 100%;
-        margin-left: 6px;
+        margin-left: 12px;
       }
     }
 
@@ -104,7 +105,7 @@ export default {
   }
 
   .roll {
-    height: 150px;
+    height: 300px;
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
@@ -113,12 +114,12 @@ export default {
         height: 100%;
 
       li {
-        width: 150px;
-        height: 150px;
-        border-radius: 9px;
+        width: 300px;
+        height: 300px;
+        border-radius: 18px;
         position: relative;
         overflow: hidden;
-        margin-right: 10px;
+        margin-right: 20px;
         float: left;
         z-index: 3;
         img {
@@ -127,8 +128,8 @@ export default {
         }
 
         .imgbottom {
-          width: 150px;
-          height: 150px;
+          width: 300px;
+          height: 300px;
           position: absolute;
           z-index: 6;
           top: 0;
@@ -137,11 +138,11 @@ export default {
          
 
           .imgtop {
-            height: 14px;
-            width: 65px;
+            height: 28px;
+            width: 130px;
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 20px;
+            left: 20px;
             z-index: 10;
             img {
               width: 80%;
@@ -149,15 +150,15 @@ export default {
             }
           }
           .title1 {
-            width: 132px;
-            height: 15px;
+            width: 264px;
+            height: 30px;
             position: absolute;
-            bottom: 10px;
-            left: 9px;
+            bottom: 20px;
+            left: 18px;
             z-index: 10;
             span {
-              font-size: 14px;
-              line-height: 15px;
+              font-size: 28px;
+              line-height: 30px;
               color: rgb(255, 255, 255);
               font-weight: bold;
               overflow: hidden;
@@ -166,16 +167,16 @@ export default {
             }
           }
           .title2 {
-            width: 132px;
-            height: 15px;
+            width: 264px;
+            height: 30px;
             position: absolute;
-            bottom: 30px;
-            left: 9px;
+            bottom: 60px;
+            left: 18px;
             overflow: hidden;
             z-index: 10;
             span {
-              font-size: 14px;
-              line-height: 15px;
+              font-size: 28px;
+              line-height: 30px;
               color: rgb(255, 255, 255);
               font-weight: bold;
               overflow: hidden;
@@ -184,30 +185,30 @@ export default {
             }
           }
           .title3 {
-            height: 16px;
-            border-radius: 8px;
+            height: 32px;
+            border-radius: 16px;
             position: absolute;
-            bottom: 10px;
-            left: 9px;
+            bottom: 20px;
+            left: 18px;
             z-index: 10;
             background: rgba(244, 244, 244, 0.5);
             img {
-              width: 15px;
-              height: 12px;
+              width: 30px;
+              height: 24px;
               float: left;
-              line-height: 16px;
-              padding:2px 3px;
+              line-height: 32px;
+              padding:4px 6px;
             }
             span {
-              font-size: 12px;
+              font-size: 24px;
               color: rgb(255, 255, 255);
-              line-height: 12px;
+              line-height: 24px;
               overflow: hidden;
               text-overflow: ellipsis;
               float: left;
-              line-height: 16px;
+              line-height: 32px;
               white-space: nowrap;
-              padding-right:5px;
+              padding-right:10px;
             }
           }
         }

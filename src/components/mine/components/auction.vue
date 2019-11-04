@@ -32,16 +32,16 @@
 </script>
 <style lang="less" scoped>
   .auction {
-    margin-top:12px;
+    margin-top:24px;
       width:100%;
-      height:132px;
+      height:264px;
       .auc {
-          width:375px;
+          width:750px;
          font-size: 14px;
-         padding-left: 12px;
+         padding-left: 24px;
          color: rgb(0, 0, 0);
-         height: 36px;
-         line-height: 36px;
+         height: 72px;
+         line-height: 72px;
          white-space: pre-wrap;
     border-width: 0px 0px 0.5px;
     border-style: solid;
@@ -56,8 +56,8 @@
     flex-shrink: 0;
       }
       .auc1 {
-          width:375px;
-          height:96px;
+          width:750px;
+          height:192px;
           border: 0px solid black;
     position: relative;
     box-sizing: border-box;
@@ -72,8 +72,8 @@
           text-decoration: none;
     position: relative;
     display: flex;
-    width: 60px;
-    height:96px;
+    width: 120px;
+    height:192px;
     -webkit-box-orient: vertical;
     flex-direction: column;
     -webkit-box-pack: center;
@@ -83,14 +83,14 @@
       }
         img {
            display: flex;
-           width: 40px;
-        height: 40px;
-         margin-top: 22px;
+           width: 80px;
+        height: 80px;
+         margin-top: 44px;
          object-fit: cover;
        }
         span {
-            width:36px;
-            height:16px;
+            width:72px;
+            height:32px;
             white-space: pre-wrap;
     border: 0px solid black;
     position: relative;
@@ -101,7 +101,7 @@
     align-content: flex-start;
     flex-shrink: 0;
     font-size: 12px;
-    margin: 4px 0px 14px;
+    margin: 8px 0px 28px;
     color: rgb(51, 51, 51);
         }
   }

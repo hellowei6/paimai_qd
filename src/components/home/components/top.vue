@@ -25,25 +25,27 @@ export default {
 </script>
 <style lang="less" scoped>
 .top {
-  width: 98%;
+  width: 100%;
+  box-sizing:border-box;
   margin: auto;
-  height: 44px;
+  height: 88px;
   align-items: center; //垂直居中
-  border: 0px solid black;
   display: flex;
   flex-direction: row;
   z-index: 11;
   background: rgb(183, 9, 19);
+  position:relative;
+position:fixed;
+top:0;
 
   .topleft {
-    width: 24px;
-    height: 24px;
-    padding: 0 6px;
+    width: 45px;
+    height: 48px;
+    padding: 0 10px;
   }
   .topcenter {
-    width: 84px;
-      height: 22px;
-      margin-right:8%; 
+    width: 20%;
+      height: 44px;
     img {
       width: 100%;
       height: 100%;
@@ -51,7 +53,10 @@ export default {
     }
   }
   .topright{
-    width:60%;
+    width:50%;
+    position:absolute;
+    top:10%;
+    right:0;
     .right{
       width:80%;
     }

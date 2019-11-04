@@ -1,6 +1,6 @@
 <template>
   <ul class="nav">
-    <router-link tag="li" to="/home">
+    <router-link tag="li" to="/home/one">
     <i class="iconfont icon-shouyexiantiao"></i>
       首页
     </router-link>
@@ -8,7 +8,7 @@
       <i class="iconfont icon-yalashefenleixiantiao"></i>
       分类
     </router-link>
-    <router-link tag="li" to="/circle">
+    <router-link tag="li" to="/circle/whole1">
       <i class="iconfont icon-quanquandongtai"></i>
       兴趣圈
     </router-link>
@@ -31,9 +31,10 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width:100%;
   display: flex;
-  padding: 0
+  padding: 0;
+    height: 98px
 }
 .nav li {
   display: flex;
@@ -41,10 +42,10 @@
   justify-content: center;
   align-items: center;
   flex: 1;
+  line-height: 40px;
 }
 .nav li i {
   font-size: 50px;
-
 }
 
 .router-link-active {

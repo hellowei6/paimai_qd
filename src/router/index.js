@@ -14,29 +14,37 @@ import One from '../components/home/components/one.vue'
 import Two from '../components/home/components/two.vue'
 import Three from '../components/home/components/three.vue'
 import Four from '../components/home/components/four.vue'
+import Searchall from '../components/home/components/searchall.vue'
 import serch1 from '../components/classify/compontents/serch1.vue'
+import base from '../components/classify/compontents/base.vue'
+import first from '../components/classify/compontents/first.vue'
+import second from '../components/classify/compontents/second.vue'
+import third from '../components/classify/compontents/third.vue'
+
 
 import One1 from "../components/focus/components/one.vue"
 import Two1 from "../components/focus/components/two.vue"
 import Three1 from "../components/focus/components/three.vue"
 import Four1 from "../components/focus/components/four.vue"
+import daohang from "../components/focus/components/daohang.vue"
+import gengduo from "../components/focus/components/gengduo.vue"
 
 Vue.use(VueRouter);
 
 let routes = [
     {
         path: '/',
-        resirect: '/home'
+        redirect: '/home/one'
     },
     {
         path: '/home',
-        // component: Home,
         component: Home,
-        resirect:"/home/one",
+        redirect:"/home/one",
         children:[
             {
                 path:"one",
-                component:One
+                component:One,
+                
             },
             {
                 path:"two",
@@ -53,16 +61,40 @@ let routes = [
         ]
     },
     {
+        path: '/searchall',
+        component: Searchall
+    },
+    {
         path: '/classify',
         component: Classify,
     },
     {
         path:'/serch1',
-        component:serch1,
+        component:serch1
+    },
+    {
+        path:'/base',
+        component:base,
+        redirect:"/base/first",
+        children:[
+            {
+                path:'first',
+                component:first
+            },
+            {
+                path:'second',
+                component:second
+            },
+            {
+                path:'third',
+                component:third
+            }
+        ]
     },
     {
         path: '/circle',
         component: Circle,
+        redirect:"/circle/my",
         children:[
             {
              path:'my',
@@ -81,7 +113,7 @@ let routes = [
     {
         path: '/focus',
         component: Focus,
-        resirect:"/focus/one",
+        redirect:"/focus/one",
         children:[
             {
                 path:"one",
@@ -99,11 +131,20 @@ let routes = [
                 path:"four",
                 component:Four1
             },
+            {
+                path:'daohang',
+                component:daohang
+            },
+           
         ]
     },
     {
+        path:'/gengduo',
+        component:gengduo
+    },
+    {
         path: '/mine',
-        component: login
+        component:Mine
     },
     {
         path: '/resigter',
@@ -116,7 +157,7 @@ let routes = [
     {
         path: '/content',
         component: Mine,
-        // component: Focus,
+ 
        
     },
     {
@@ -133,9 +174,9 @@ let routes = [
     },
     {
         path: '*',
-        resirect: '/home'
+        redirect: '/home'
     },
-
+  
 ]
 
 let router = new VueRouter({

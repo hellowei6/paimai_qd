@@ -8,8 +8,8 @@
 </template>
 <script>
 
-import BScroll from "@better-scroll/core";
-import {getCateList} from "@/api"
+import BScroll from '@better-scroll/core'
+import { getCateList } from "@/api"
 
 export default {
     data(){
@@ -22,11 +22,13 @@ export default {
 
     },
     methods:{
+      
       selectOne(index){
         this.currentIndex = index;
         // 让右边进行跟随
         this.$store.state.eventBus.$emit('myscroll', index);
       }
+
     },
    
     async mounted(){

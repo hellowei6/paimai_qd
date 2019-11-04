@@ -27,7 +27,7 @@
   left: 0; */
   width: 96%;
   margin: auto;
-  height:50px;
+  height:100px;
 }
 .nav li {
   /* display: flex;
@@ -38,12 +38,12 @@
   float: left;
   width: 21%;
   height: 60%;
-  border-radius: 15px;
+  border-radius: 30px;
   margin: 2% 2%;
   text-align: center;
 }
 .nav li span {
-  font-size: 17px;
+  font-size: 34px;
   /* color: rgb(77, 77, 77); */
   font-weight: bold;
   display: block;

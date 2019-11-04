@@ -5,10 +5,22 @@
       <p>你还没有设置过提醒</p>
       <span>对感兴趣的拍品设置提醒，开拍前、结束前、出价被超越时会收到消息，不再错过心仪的拍品</span>
     </div>
+    <recommend></recommend>
+    <!-- <reco></reco> -->
+    <moreReco></moreReco>
   </div>
 </template>
 <script>
-export default {};
+// import reco from "../../mine/components/commodity"
+import recommend from "../components/recommend";
+import moreReco from "../components/more-reco";
+export default {
+  components: {
+    // reco,
+    recommend,
+    moreReco
+  }
+};
 </script>
 <style lang="less" scoped>
 .three {
@@ -22,7 +34,7 @@ export default {};
       margin: 0 auto;
       display: flex;
       height: 160px;
-    //   object-fit: cover;
+      //   object-fit: cover;
     }
     p {
       text-align: center;

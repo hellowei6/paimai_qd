@@ -15,10 +15,10 @@ export default {};
 
 <style lang="less" scoped>
 .all {
-  width: 96px;
-  height: 38px;
+  width: 192px;
+  height: 76px;
   position: relative;
-  border-radius: 25px 0 0 25px;
+  border-radius: 50px 0 0 50px;
   background-image: linear-gradient(
     to right,
     rgb(182, 7, 46),
@@ -27,8 +27,8 @@ export default {};
 a{
     text-decoration: none;
  img {
-    width: 40px;
-    height: 50px;
+    width: 80px;
+    height: 100px;
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -36,11 +36,11 @@ a{
   }
 
   span {
-    font-size: 14px;
+    font-size: 28px;
     font-weight: 500;
     color: rgb(255, 218, 182);
-    width: 56px;
-    padding-left: 6px;
+    width: 112px;
+    padding-left: 12px;
   }
 
   .title1{

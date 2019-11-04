@@ -40,8 +40,8 @@ export default {
 .doubleone {
   width: 96%;
   margin:auto;
-  height: 123px;
-  border-radius: 6px;
+  height: 246px;
+  border-radius: 12px;
   display: flex;
   flex: 1;
   
@@ -50,7 +50,7 @@ export default {
   }
   li {
     // width: 22%;
-    height: 120px;
+    height: 240px;
     list-style: none;
     float: left;
     position: relative;
@@ -61,8 +61,8 @@ export default {
 
     a {
       width: 100%;
-      height: 120px;
-      border-radius: 6px;
+      height: 240px;
+      border-radius: 12px;
       .shuangtop {
         width: 100%;
         height: 100%;
@@ -73,7 +73,7 @@ export default {
           top: 0;
           left: 0;
           z-index: 1;
-          border-radius: 6px 6px 0 0;
+          border-radius: 12px 12px 0 0;
         }
       }
       .shuangbottom {
@@ -81,35 +81,35 @@ export default {
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 41px;
+        height: 82px;
         z-index: 2;
         img {
           width: 100%;
-          height: 41px;
+          height: 82px;
           z-index: 2;
           position: relative;
         }
         .title1 {
           width: 100%;
-          height: 15px;
-          font-size: 13px;
+          height: 30px;
+          font-size: 26px;
           color: rgb(255, 255, 255);
-          line-height: 15px;
+          line-height: 30px;
           position: absolute;
           text-align: center;
-          top: 5px;
+          top: 10px;
           left: 0;
           z-index: 3;
         }
         .title2 {
           width: 100%;
-          font-size: 12px;
+          font-size: 24px;
           color: rgb(255, 255, 255);
-          line-height: 14px;
-          margin-top: 2px;
+          line-height: 28px;
+          margin-top: 4px;
           position: absolute;
           text-align: center;
-          bottom: 5px;
+          bottom: 10px;
           left: 0;
           z-index: 3;
         }

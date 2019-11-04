@@ -38,11 +38,13 @@ export default {
   margin-right: -40px;
   margin-top: 140px;
   ul {
-      width:1000px;
-      margin-left: -60px;
+      width:2040px;
+      height:200px;
+      margin-left: 10px;
+      padding-top:30px;
     li {
       width: 490px;
-      height: 180px;
+      height: 60px;
       display: inline-block;
       padding: 0 10px;
     }

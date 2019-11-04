@@ -11,7 +11,9 @@ export function getBanner() {
     return  axios.get("public")
 }
 
-
+export function getLogin(){
+    return axios.get('login');
+}
 //对数据进行拦截
 
 //获取双11

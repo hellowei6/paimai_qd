@@ -27,11 +27,12 @@
       <span class="right">免费注册</span>
     </router-link>
     <br />
-    <router-link to='loginok'><button @click="login">登录</button></router-link>
+    <button @click="login">登录</button>
   </div>
 </template>
 <script>
-// import axios from "axios";
+import axios from "axios";
+// import {getLogin} from "@/api";
 export default {
   data() {
     return {
@@ -42,16 +43,40 @@ export default {
   },
   methods: {
     login() {
-      // axios.get(
-      //     `http://localhost:8000?username=${this.userName}&pwd=${this.password}`
-      //   ).then(data=> {
-      //     window.console.log(data);
-      //     this.codeList = data.data.code;
-      //     if (this.codeList == "200") {
-      //       this.$router.push("/loginok");
-      //     }
-      //   });
+      axios.get(
+          `http://localhost:8000?username=${this.userName}&pwd=${this.password}`
+        ).then(data=> {
+          window.console.log(data);
+          this.codeList = data.code;
+          window.console.log(this.codeList);
+          if (this.codeList == "200") {
+            this.$router.push("/loginok");
+          }
+        });
 
+    //  this.codeList=getLogin()
+    //  window.console.log(this.codeList.code);
+       
+//        fetch(`http://localhost:8000?username=${this.userName}&pwd=${this.password}`, {
+//   method: "GET",
+//   headers: {
+//       "Content-Type": "application/json",
+//   },
+//   mode: "cors",
+//   body: JSON.stringify({
+//       content: "留言内容"
+//   })
+// }).then(function(res) {
+//   if (res.status === 200) {
+//       return res.json()
+//   } else {
+//       return Promise.reject(res.json())
+//   }
+// }).then(function(data) {
+//   window.console.log(data);
+// }).catch(function(err) {
+//  window.console.log(err);
+// });
 
 
     //   var xhr = new XMLHttpRequest();

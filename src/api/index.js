@@ -109,9 +109,9 @@ export function getALLfocus() {
     return axios.get("focusShopping")
 }
 
-export function getMsProduct1() {
-    return axios.get("msProduct1")
-}
-export function getRotation() {
-    return axios.get("rotation")
-}
+// export function getMsProduct1() {
+//     return axios.get("msProduct1")
+// }
+// export function getRotation() {
+//     return axios.get("rotation")
+// }
